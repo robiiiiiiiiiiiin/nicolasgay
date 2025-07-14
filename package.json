@@ -4,8 +4,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "watch": "cross-env ENV=development npx @11ty/eleventy --serve",
-    "build": "cross-env ENV=production  npx @11ty/eleventy"
+    "watch": "npx @11ty/eleventy --serve",
+    "build": "npx @11ty/eleventy"
   },
   "author": "",
   "license": "ISC",
@@ -14,7 +14,8 @@
   "dependencies": {
     "@11ty/eleventy": "^3.0.0",
     "@11ty/eleventy-img": "^6.0.2",
-    "contentful": "^11.5.22"
+    "contentful": "^11.5.22",
+    "dotenv": "^17.2.0"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4.1.5",

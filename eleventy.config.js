@@ -1,11 +1,15 @@
 import fs from 'fs';
 import path from 'path';
+import dotenv from 'dotenv';
 import cssnano from 'cssnano';
 import postcss from 'postcss';
 import tailwindcss from '@tailwindcss/postcss';
 import { eleventyImageTransformPlugin } from "@11ty/eleventy-img";
 
 export default function (eleventyConfig) {
+    // Configure dotenv
+    dotenv.config();
+    
     // ****************************************************************** BASE CONFIG ********************** //
     // Order matters, put this at the top of your configuration file.
     eleventyConfig.setInputDirectory("src");
