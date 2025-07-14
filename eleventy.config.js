@@ -7,8 +7,19 @@ import tailwindcss from '@tailwindcss/postcss';
 import { eleventyImageTransformPlugin } from "@11ty/eleventy-img";
 
 export default function (eleventyConfig) {
-    // Configure dotenv
-    dotenv.config();
+    // Configure dotenv based on NODE_ENV
+    const isDevelopment = process.env.NODE_ENV === 'development';
+    const isProduction = process.env.NODE_ENV === 'production';
+    
+    if (isDevelopment) {
+        dotenv.config({ path: '.env.dev' });
+    } else if (isProduction) {
+        dotenv.config({ path: '.env.prod' });
+    } else {
+        // Fallback to dev
+        dotenv.config({ path: '.env.dev' });
+        dotenv.config(); // This will load .env if .env.local doesn't exist
+    }
     
     // ****************************************************************** BASE CONFIG ********************** //
     // Order matters, put this at the top of your configuration file.

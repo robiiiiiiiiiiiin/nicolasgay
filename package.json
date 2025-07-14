@@ -4,8 +4,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "watch": "npx @11ty/eleventy --serve",
-    "build": "npx @11ty/eleventy"
+    "watch": "NODE_ENV=development npx @11ty/eleventy --serve",
+    "build": "NODE_ENV=production npx @11ty/eleventy"
   },
   "author": "",
   "license": "ISC",

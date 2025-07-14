@@ -22,8 +22,9 @@ When you use an `<img>` tag, it will automatically generate a `<picture>` elemen
   
 Images fetched from Contentful should not be handled by `eleventyImageTransformPlugin`. To do this, you need to add `eleventy:ignore` to the `<img>` tag.
 ### Environment variables
-The project uses cross-env to set environment variables.  
-The variable is set in the `package.json` scripts.  
+The project uses dotenv to set environment variables.  
+The variable is set in the `package.json` scripts.
+.env.dev is loaded when running `npm run watch` and `.env.prod` is loaded when running `npm run build`.  
 The code is not minified in dev mode, etc
 ### Data fetching
 The data files are in the `src/_data` folder.  
