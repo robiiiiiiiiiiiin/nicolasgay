@@ -1,0 +1,22 @@
+---
+layout: layout.njk
+title: Homepage
+---
+
+<h1 class="text-primary text-5xl">{{ test.title }}</h1>
+
+<img src="/img/sample_4k.jpeg" alt="Eleventy mascot" class="w-[300px]">
+
+<p class="text-2xl text-gray-500">Projects</p>
+<ul>
+    {% for project in projects %}
+        <li>
+            <a href="/project/{{ project.fields.title | slugify }}">{{project.fields.title}}</a>
+        </li>
+    {% endfor %}
+</ul>
+
+<script type="text/javascript">
+    console.log("Hello world");
+    console.log({{ projects | dump(2) | safe }});
+</script>

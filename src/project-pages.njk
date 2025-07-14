@@ -1,0 +1,13 @@
+---
+pagination:
+  data: projects
+  size: 1
+  alias: project
+permalink: "project/{{ project.fields.title | slugify }}/"
+layout: layout.njk
+eleventyComputed:
+    title: "{{ project.fields.title }}"
+---
+<h1>{{ project.fields.title }}</h1>
+<p>{{ project.fields.description }}</p>
+<img eleventy:ignore src="{{ project.fields.mainImage.fields.file.url }}" alt="{{ project.fields.mainImage.fields.title }}" class="w-[300px]">
