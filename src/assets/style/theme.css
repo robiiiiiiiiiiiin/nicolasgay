@@ -1,5 +1,13 @@
 /********************* COLORS */
 @theme {
     --color-*: initial;
-    --color-primary: #7c0637;
+    --color-primary: #e17fa2;
+    --color-primary-dark: #b11c57;
+    --color-secondary: #e7de5a;
+    
+    --color-black: #000;
+    --color-white: #fff;
+
+    --font-title: 'Brimstone', serif;
+    --font-body: 'Times New Roman', serif;
 }

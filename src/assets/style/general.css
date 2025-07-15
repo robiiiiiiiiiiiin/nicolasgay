@@ -1,3 +1,18 @@
+@font-face {
+    font-family: 'Brimstone';
+    src: url('public/font/JD-BRIMSTONE-BASIC.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+h2 {
+    color: var(--color-secondary);
+    text-decoration: underline;
+    font-size: 32px;
+    filter: drop-shadow(2px 1px 2px var(--color-primary));
+}
+
 html {
     box-sizing: border-box;
 }

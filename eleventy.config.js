@@ -24,6 +24,7 @@ export default function (eleventyConfig) {
     // ****************************************************************** BASE CONFIG ********************** //
     // Order matters, put this at the top of your configuration file.
     eleventyConfig.setInputDirectory("src");
+    eleventyConfig.addPassthroughCopy("src/public");
     eleventyConfig.addPassthroughCopy({ "src/assets/js": "js" });
     eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
         // output image formats

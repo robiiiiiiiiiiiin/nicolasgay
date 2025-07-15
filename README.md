@@ -21,6 +21,9 @@ At the moment, every file in the `src/assets/js` folder are simply copied in the
 When you use an `<img>` tag, it will automatically generate a `<picture>` element with the full srcset etc.
   
 Images fetched from Contentful should not be handled by `eleventyImageTransformPlugin`. To do this, you need to add `eleventy:ignore` to the `<img>` tag.
+### Public folder
+The `src/public` folder is used to store static files that should be copied to the build directory.  
+It can be useful if an image doesn't need to be optimised, or if you want to use a file that is not handled by Eleventy (like a favicon, robots.txt, etc.).
 ### Environment variables
 The project uses dotenv to set environment variables.  
 The variable is set in the `package.json` scripts.
