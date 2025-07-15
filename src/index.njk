@@ -3,7 +3,11 @@ layout: layout.njk
 title: Homepage
 ---
 
-<h1 class="font-title bg-[linear-gradient(#b11c57,_#e17fa2)] bg-clip-text text-5xl text-center leading-[1.5] drop-shadow-secondary drop-shadow-[2px_2px_1px]" style="-webkit-text-fill-color: transparent;">{{ general.title }}</h1>
+<h1 class="relative font-title bg-[linear-gradient(#b11c57,_#e17fa2)] bg-clip-text text-5xl text-center leading-[1.5] drop-shadow-secondary drop-shadow-[2px_2px_1px] max-w-[260px] mx-auto" style="-webkit-text-fill-color: transparent;">
+    <span>{{ general.title }}</span>
+    <img src="/public/img/sparkle.png" alt="" class="absolute top-0 left-[220px] w-9 h-9 -translate-y-1/3 ">
+    <img src="/public/img/sparkle.png" alt="" class="absolute top-[43%] left-[70px] w-9 h-9 ">
+</h1>
 
 <div class="w-[65%] max-w-[300px] mx-auto">
     <img src="https:{{ general.nicosImage.fields.file.url }}" alt="Nicolas Gay" class="w-full border-3 border-secondary drop-shadow-primary drop-shadow-[0_0_40px] mt-6">
@@ -12,11 +16,23 @@ title: Homepage
 <p class="text-white mt-10 text-[18px] max-w-[420px] mx-auto">{{ general.description }}</p>
 
 <h2 class="mt-10 mb-6">{{ general.projectsTitle }}</h2>
-<ul class="grid grid-cols-2 gap-3">
+<ul class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3">
     {% for project in projects %}
         <li>
             <img src="https:{{ project.fields.image_main.fields.file.url }}" alt="{{ project.fields.title }}" class="w-full aspect-square object-cover" style="mask-image: linear-gradient(0deg,rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 1) 50%);">
             <a href="/project/{{ project.fields.title | slugify }}" class="block text-[20px] leading-[1.1] -translate-y-6">{{project.fields.title}}</a>
+        </li>
+    {% endfor %}
+</ul>
+
+<h2 class="mt-10 mb-6">{{ general.galleryTitle }}</h2>
+<ul class="flex gap-3">
+    {% for category in categories %}
+        <li>
+            <button class="flex flex-col items-center gap-2">
+                <img src="https:{{ category.fields.image.fields.file.url }}" alt="{{ category.fields.title }}" class="h-9 object-contain">
+                <span class="text-[14px]">{{ category.fields.title }}</span>
+            </button>
         </li>
     {% endfor %}
 </ul>
