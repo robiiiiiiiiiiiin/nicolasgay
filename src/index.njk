@@ -29,15 +29,26 @@ title: Homepage
 <ul class="flex gap-3">
     {% for category in categories %}
         <li>
-            <button class="flex flex-col items-center gap-2">
+            <button class="isotope-filter flex flex-col items-center gap-2 cursor-pointer" data-filter=".{{ category.fields.title | slugify }}">
                 <img src="https:{{ category.fields.image.fields.file.url }}" alt="{{ category.fields.title }}" class="h-9 object-contain">
                 <span class="text-[14px]">{{ category.fields.title }}</span>
             </button>
         </li>
     {% endfor %}
 </ul>
+<div class="isotope-grid mt-6">
+    <div class="grid-sizer w-[calc(50%_-_6px)]"></div>
+    <div class="gutter-sizer w-3"></div>
+    {% for project in projects %}
+        {% for image in project.fields.images %}
+            <a href="https:{{ image.fields.file.url }}" data-fancybox="{{ project.fields.title }}" class="isotope-item w-[calc(50%_-_6px)] mb-3 {% for category in project.fields.categories %}{{ category.fields.title | slugify }} {% endfor %}">
+                <img src="https:{{ image.fields.file.url }}" alt="{{ project.fields.title }}" class="w-full" >
+            </a>
+        {% endfor %}
+    {% endfor %}
+</div>
 
 <script type="text/javascript">
     console.log("Hello world");
-    console.log({{ general | dump(2) | safe }});
+    console.log({{ projects | dump(2) | safe }});
 </script>

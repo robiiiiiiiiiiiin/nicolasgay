@@ -1,4 +1,6 @@
 @import 'tailwindcss';
 @import './theme.css';
+@import '../../../node_modules/@fancyapps/ui/dist/fancybox/fancybox.css';
 
 @import './general.css';
+@import './filters.css';

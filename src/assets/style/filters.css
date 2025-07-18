@@ -1,0 +1,10 @@
+.isotope-filter.active {
+    /* filter: drop-shadow(30px 10px 4px var(--color-primary)); */
+    span {
+        color: var(--color-secondary);
+        text-decoration: underline;
+    }
+}
+.f-carousel__toolbar__column.is-right .f-button:not(:last-child) {
+  display: none !important;
+}

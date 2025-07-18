@@ -5,6 +5,7 @@ import cssnano from 'cssnano';
 import postcss from 'postcss';
 import tailwindcss from '@tailwindcss/postcss';
 import { eleventyImageTransformPlugin } from "@11ty/eleventy-img";
+import * as esbuild from 'esbuild';
 
 export default function (eleventyConfig) {
     // Configure dotenv based on NODE_ENV
@@ -25,7 +26,8 @@ export default function (eleventyConfig) {
     // Order matters, put this at the top of your configuration file.
     eleventyConfig.setInputDirectory("src");
     eleventyConfig.addPassthroughCopy("src/public");
-    eleventyConfig.addPassthroughCopy({ "src/assets/js": "js" });
+    // JavaScript will be bundled by esbuild, so we don't need to copy individual files
+    // eleventyConfig.addPassthroughCopy({ "src/assets/js": "js" });
     eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
         // output image formats
         formats: ["avif", "webp", "auto"],
@@ -55,6 +57,7 @@ export default function (eleventyConfig) {
     const processor = postcss(postcssConfig);
 
     eleventyConfig.on('eleventy.before', async () => {
+        // ****************************************************************** CSS PROCESSING ********************** //
         const tailwindInputPath = path.resolve('./src/assets/style/bundle.css');
         const tailwindOutputPath = './_site/bundle.css';
 
@@ -71,6 +74,22 @@ export default function (eleventyConfig) {
         });
 
         fs.writeFileSync(tailwindOutputPath, result.css);
+
+        // ****************************************************************** JAVASCRIPT BUNDLING ********************** //
+        const jsOutputDir = './_site/js';
+        if (!fs.existsSync(jsOutputDir)) {
+            fs.mkdirSync(jsOutputDir, { recursive: true });
+        }
+
+        // Simple build - let separate esbuild process handle watching
+        await esbuild.build({
+            entryPoints: ['src/assets/js/main.js'],
+            bundle: true,
+            outfile: './_site/js/bundle.js',
+            format: 'iife',
+            minify: isProduction,
+            sourcemap: isDevelopment,
+        });
     });
 };
 
