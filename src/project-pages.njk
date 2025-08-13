@@ -8,6 +8,28 @@ layout: layout.njk
 eleventyComputed:
     title: "{{ project.fields.title }}"
 ---
-<h1>{{ project.fields.title }}</h1>
-<p>{{ project.fields.description }}</p>
-<img eleventy:ignore src="{{ project.fields.mainImage.fields.file.url }}" alt="{{ project.fields.mainImage.fields.title }}" class="w-[300px]">
+
+<a href="/" class="relative block font-title bg-[linear-gradient(#b11c57,_#e17fa2)] bg-clip-text text-5xl text-center leading-[1.5] drop-shadow-secondary drop-shadow-[2px_2px_1px] max-w-[260px] mx-auto" style="-webkit-text-fill-color: transparent;">
+    <span>{{ general.title }}</span>
+    <img src="/public/img/sparkle.png" alt="" class="absolute top-0 left-[220px] w-9 h-9 -translate-y-1/3 ">
+    <img src="/public/img/sparkle.png" alt="" class="absolute top-[43%] left-[70px] w-9 h-9 ">
+</a>
+
+<h1 class="mt-10 mb-6 style-h2">{{ project.fields.title }}</h1>
+<p>{{ project.fields.descriptionHtml | safe }}</p>
+
+<div class="isotope-grid mt-6">
+    <div class="grid-sizer w-[calc(50%_-_6px)]"></div>
+    <div class="gutter-sizer w-3"></div>
+      {% for image in project.fields.images %}
+          <a href="https:{{ image.fields.file.url }}" data-fancybox="{{ project.fields.title }}" class="isotope-item w-[calc(50%_-_6px)] mb-3 {% for category in project.fields.categories %}{{ category.fields.title | slugify }} {% endfor %}">
+              <img src="https:{{ image.fields.file.url }}" alt="{{ project.fields.title }}" class="w-full" >
+          </a>
+      {% endfor %}
+</div>
+
+<script type="text/javascript">
+    console.log("Hello world");
+    console.log({{ project.fields.description | dump(2) | safe }});
+    console.log({{ project.fields.descriptionHtml | dump(2) | safe }});
+</script>
