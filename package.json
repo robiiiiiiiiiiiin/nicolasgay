@@ -5,8 +5,11 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch": "concurrently \"npm run watch:eleventy\" \"npm run watch:js\" --names \"11ty,esbuild\" --prefix-colors \"blue,green\"",
+    "watch:windows": "concurrently \"npm run watch:eleventy-win\" \"npm run watch:js-win\" --names \"11ty,esbuild\" --prefix-colors \"blue,green\"",
     "watch:eleventy": "NODE_ENV=development npx @11ty/eleventy --serve",
+    "watch:eleventy-win": "SET NODE_ENV=development & npx @11ty/eleventy --serve",
     "watch:js": "NODE_ENV=development esbuild src/assets/js/main.js --bundle --outfile=_site/js/bundle.js --format=iife --sourcemap --watch",
+    "watch:js-win": "SET NODE_ENV=development & esbuild src/assets/js/main.js --bundle --outfile=_site/js/bundle.js --format=iife --sourcemap --watch",
     "build": "npm run build:js && npm run build:eleventy",
     "build:eleventy": "NODE_ENV=production npx @11ty/eleventy",
     "build:js": "NODE_ENV=production esbuild src/assets/js/main.js --bundle --outfile=_site/js/bundle.js --format=iife --minify"
