@@ -19,8 +19,10 @@ title: Homepage
 <ul class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3">
     {% for project in projects %}
         <li>
-            <img src="https:{{ project.fields.image_main.fields.file.url }}" alt="{{ project.fields.title }}" class="w-full aspect-square object-cover" style="mask-image: linear-gradient(0deg,rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 1) 50%);">
-            <a href="/project/{{ project.fields.title | slugify }}" class="block text-[20px] leading-[1.1] -translate-y-6">{{project.fields.title}}</a>
+            <a href="/project/{{ project.fields.title | slugify }}" class="group">
+                <img src="https:{{ project.fields.image_main.fields.file.url }}" alt="{{ project.fields.title }}" class="w-full aspect-square object-cover" style="mask-image: linear-gradient(0deg,rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 1) 50%);">
+                <div class="block text-[20px] leading-[1.1] -translate-y-6 group-hover:text-secondary">{{project.fields.title}}</div>
+            </a>
         </li>
     {% endfor %}
 </ul>
@@ -29,9 +31,9 @@ title: Homepage
 <ul class="flex gap-3">
     {% for category in categories %}
         <li>
-            <button class="isotope-filter flex flex-col items-center gap-2 cursor-pointer" data-filter=".{{ category.fields.title | slugify }}">
+            <button class="isotope-filter flex flex-col items-center gap-2 group cursor-pointer" data-filter=".{{ category.fields.title | slugify }}">
                 <img src="https:{{ category.fields.image.fields.file.url }}" alt="{{ category.fields.title }}" class="h-9 object-contain">
-                <span class="text-[14px]">{{ category.fields.title }}</span>
+                <span class="text-[14px] group-hover:text-secondary">{{ category.fields.title }}</span>
             </button>
         </li>
     {% endfor %}
