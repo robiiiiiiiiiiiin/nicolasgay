@@ -1,4 +1,4 @@
-# Test 11ty 🦝🎈
+# Test 11ty 🦝🎈 :)
 Could be a "Base 11ty" in a near future.
 
 ## 📝 Todo
