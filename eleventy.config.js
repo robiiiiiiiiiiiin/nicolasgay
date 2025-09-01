@@ -28,7 +28,7 @@ export default function (eleventyConfig) {
     eleventyConfig.addPassthroughCopy("src/public");
     // JavaScript will be bundled by esbuild, so we don't need to copy individual files
     // eleventyConfig.addPassthroughCopy({ "src/assets/js": "js" });
-    eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
+    /* eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
         // output image formats
         formats: ["avif", "webp", "auto"],
 
@@ -43,7 +43,7 @@ export default function (eleventyConfig) {
             },
             pictureAttributes: {}
         },
-    });
+    }); */
 
     // ****************************************************************** TAILWIND ********************** //
     const postcssConfig = [
