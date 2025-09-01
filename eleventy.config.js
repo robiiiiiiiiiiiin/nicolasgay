@@ -43,6 +43,35 @@ export default function (eleventyConfig) {
             },
             pictureAttributes: {}
         },
+
+        // Error handling options
+        sharpOptions: {
+            failOnError: false, // Don't fail the build on image processing errors
+        },
+
+        // Transform hook to handle errors gracefully
+        transformOnRequest: false, // Process images at build time, not on request
+        
+        // Custom error handling
+        onError: function(error, outputPath) {
+            console.warn(`[11ty/eleventy-img] Warning: Failed to process image: ${outputPath}`);
+            console.warn(`Error: ${error.message}`);
+            // Return a fallback image path or null to skip
+            return null;
+        },
+    });
+
+    // ****************************************************************** CUSTOM SHORTCODES ********************** //
+    // Safe image shortcode with fallback
+    eleventyConfig.addShortcode("safeImage", function(src, alt, classes = "", fallbackSrc = "/public/img/image_not_found.jpg") {
+        if (!src) {
+            return `<img src="${fallbackSrc}" alt="${alt}" class="${classes}" data-error="missing-src">`;
+        }
+        
+        // Add https: prefix if it's a Contentful URL without protocol
+        const imageSrc = src.startsWith('//') ? `https:${src}` : src;
+        
+        return `<img src="${imageSrc}" alt="${alt}" class="${classes}" onerror="this.src='${fallbackSrc}'; this.setAttribute('data-error', 'load-failed');">`;
     });
 
     // ****************************************************************** TAILWIND ********************** //
@@ -91,6 +120,15 @@ export default function (eleventyConfig) {
             sourcemap: isDevelopment,
         });
     });
+
+    // ****************************************************************** ERROR HANDLING ********************** //
+    // Don't let image processing errors stop the build
+    eleventyConfig.addGlobalData("buildErrorsFallback", {
+        imageNotFound: "/public/img/image_not_found.jpg"
+    });
+
+    // More lenient build behavior
+    eleventyConfig.setQuietMode(false); // Show warnings
 };
 
 export const config = {
