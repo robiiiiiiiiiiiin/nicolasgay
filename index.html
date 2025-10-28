@@ -37,6 +37,7 @@ Je m’appelle Nicolas Gay, je fais de la couture, du bricolage, des costumes et
         <div class="relative max-w-[1000px] mx-auto">
 
             
+
 <h1 class="relative font-title bg-[linear-gradient(#b11c57,_#e17fa2)] bg-clip-text text-5xl text-center leading-[1.5] drop-shadow-secondary drop-shadow-[2px_2px_1px] max-w-[260px] mx-auto" style="-webkit-text-fill-color: transparent;">
     <span>Nicolas Gay</span>
     <img src="/public/img/sparkle.png" alt="" class="absolute top-0 left-[220px] w-9 h-9 -translate-y-1/3 ">
@@ -47,8 +48,52 @@ Je m’appelle Nicolas Gay, je fais de la couture, du bricolage, des costumes et
     <img src="https://images.ctfassets.net/h9dp0t9qreql/54HTtQmspO06KNvc1I6FwP/3fd1e7358dae019399cf9948aea1c57a/Nicolas_gay_slay.jpg" alt="Nicolas Gay" class="w-full border-3 border-secondary drop-shadow-primary drop-shadow-[0_0_40px] mt-6">
 </div>
 
-<p class="text-white mt-10 text-[18px] max-w-[420px] mx-auto">Bienvenue sur mon portfolio!!
+<p class="text-white my-10 text-[18px] max-w-[420px] mx-auto">Bienvenue sur mon portfolio!!
 Je m’appelle Nicolas Gay, je fais de la couture, du bricolage, des costumes et j’ai un zine et pleins d’autres trucs (texte temporaire)</p>
+
+<div id="musicPlayer" class="sticky top-0 -ml-3 w-[calc(100%_+_1.5rem)] mt-10 z-music-player">
+    
+    <div class="w-full h-8" style="background: linear-gradient(180deg,rgba(177, 28, 87, 1) 0%, rgba(177, 28, 87, 1) 12%, rgba(239, 123, 82, 1) 12%, rgba(239, 123, 82, 1) 25%, rgba(234, 234, 116, 1) 25%, rgba(234, 234, 116, 1) 37%, rgba(35, 129, 67, 1) 37%, rgba(35, 129, 67, 1) 50%, rgba(36, 139, 205, 0.75) 50%);" >
+        <div class="max-max-w-reached:px-3 max-w-[1000px] mx-auto flex justify-between items-center">
+            <div class="flex items-end">
+                <img src="/public/img/k7.jpg" alt="" class="h-full">
+                <div class="mx-1 whitespace-nowrap overflow-hidden max-w-[calc(100vw_-_180px)]">
+                    
+                        <div class="audio-title hidden text-s text-white text-ellipsis">Twin Peaks Intro</div>
+                        <audio class="hidden" src="https://assets.ctfassets.net/h9dp0t9qreql/2894MQG7swFTkZynQ4xHuY/83f2ae58af3b506565f1a14c32b86cb9/Twin_Peaks_Intro.mp3"></audio>
+                    
+                        <div class="audio-title hidden text-s text-white text-ellipsis">Forklift Operator - Determination (A Burning Of Incense)</div>
+                        <audio class="hidden" src="https://assets.ctfassets.net/h9dp0t9qreql/6dwapD1wVHeUabNRyxC22a/c5307559e440b19ba4f4efbcc9872619/Forklift_Operator_-_Determination__A_Burning_Of_Incense_.mp3"></audio>
+                    
+                </div>
+            </div>
+            <div class="flex gap-2 items-center">
+                <button type="button" title="Previous track" class="prev w-6 h-6 p-1 flex justify-center items-center border-1 border-gray cursor-pointer" style="background: linear-gradient(179deg,rgba(229, 154, 181, 1) 0%, rgba(255, 232, 240, 1) 26%, rgba(220, 119, 155, 1) 100%); filter: drop-shadow(1px 1px 1px var(--color-primary));">
+                    <svg class="w-full h-full" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 1.14 14.5 14.72">
+                        <path d="M7 8.5L14.5 1.13878L14.5 15.8612L7 8.5Z" fill="white"></path>
+                        <path d="M-3.71547e-07 8.5L7.5 1.13878L7.5 15.8612L-3.71547e-07 8.5Z" fill="white"></path>
+                    </svg>
+                </button>
+                <button type="button" title="Play/Pause" class="play-pause w-6 h-6 p-1 flex justify-center items-center border-1 border-gray cursor-pointer" style="background: linear-gradient(179deg,rgba(229, 154, 181, 1) 0%, rgba(255, 232, 240, 1) 26%, rgba(220, 119, 155, 1) 100%); filter: drop-shadow(1px 1px 1px var(--color-primary));">
+                    <svg class="icon-play w-full h-full" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 12.75 14.72">
+                        <path d="M12.75 7.36121L-6.93316e-07 14.7224L-4.97778e-08 -1.05709e-05L12.75 7.36121Z" fill="white"></path>
+                    </svg>
+                    <svg class="icon-pause hidden w-full h-full" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 15">
+                        <rect width="5" height="15" fill="white"></rect>
+                        <rect x="9" width="5" height="15" fill="white"></rect>
+                    </svg>
+                </button>
+                <button type="button" title="Next track" class="next w-6 h-6 p-1 flex justify-center items-center border-1 border-gray cursor-pointer" style="background: linear-gradient(179deg,rgba(229, 154, 181, 1) 0%, rgba(255, 232, 240, 1) 26%, rgba(220, 119, 155, 1) 100%); filter: drop-shadow(1px 1px 1px var(--color-primary));">
+                    <svg class="w-full h-full" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="2.5 1.14 14.5 14.72">
+                        <path d="M10 8.5L2.5 15.8612L2.5 1.13878L10 8.5Z" fill="white"></path>
+                        <path d="M17 8.5L9.5 15.8612L9.5 1.13878L17 8.5Z" fill="white"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+
+</div>
 
 <h2 class="mt-10 mb-6">Mes projets</h2>
 <ul class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3">
@@ -382,7 +427,3934 @@ Je m’appelle Nicolas Gay, je fais de la couture, du bricolage, des costumes et
 </div>
 
 <script type="text/javascript">
-    
+    {
+        # console.log([
+  {
+    "metadata": {
+      "tags": [],
+      "concepts": []
+    },
+    "sys": {
+      "space": {
+        "sys": {
+          "type": "Link",
+          "linkType": "Space",
+          "id": "h9dp0t9qreql"
+        }
+      },
+      "id": "5iEG14c6dRYGdYUS9x1hXx",
+      "type": "Entry",
+      "createdAt": "2025-07-14T08:30:45.155Z",
+      "updatedAt": "2025-07-14T08:30:45.155Z",
+      "environment": {
+        "sys": {
+          "id": "master",
+          "type": "Link",
+          "linkType": "Environment"
+        }
+      },
+      "publishedVersion": 5,
+      "revision": 1,
+      "contentType": {
+        "sys": {
+          "type": "Link",
+          "linkType": "ContentType",
+          "id": "project"
+        }
+      },
+      "locale": "en-US"
+    },
+    "fields": {
+      "title": "Tournage greenmoon",
+      "description": {
+        "data": {},
+        "content": [
+          {
+            "data": {},
+            "content": [
+              {
+                "data": {},
+                "marks": [],
+                "value": "Spot publicitaire pour la marque de bijoux greenmoon jewelry pour laquelle je me suis occupé de tous les costumes. ",
+                "nodeType": "text"
+              }
+            ],
+            "nodeType": "paragraph"
+          }
+        ],
+        "nodeType": "document"
+      },
+      "image_main": {
+        "metadata": {
+          "tags": [],
+          "concepts": []
+        },
+        "sys": {
+          "space": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Space",
+              "id": "h9dp0t9qreql"
+            }
+          },
+          "id": "3pogeXyM5dugGCmNruE9Fn",
+          "type": "Asset",
+          "createdAt": "2025-07-14T08:19:41.334Z",
+          "updatedAt": "2025-07-14T08:19:41.334Z",
+          "environment": {
+            "sys": {
+              "id": "master",
+              "type": "Link",
+              "linkType": "Environment"
+            }
+          },
+          "publishedVersion": 2,
+          "revision": 1,
+          "locale": "en-US"
+        },
+        "fields": {
+          "title": "11",
+          "file": {
+            "url": "//images.ctfassets.net/h9dp0t9qreql/3pogeXyM5dugGCmNruE9Fn/399a223901f06d4aef12d094bac6e75c/11.jpg",
+            "details": {
+              "size": 45660,
+              "image": {
+                "width": 721,
+                "height": 431
+              }
+            },
+            "fileName": "11.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      },
+      "images": [
+        {
+          "metadata": {
+            "tags": [],
+            "concepts": []
+          },
+          "sys": {
+            "space": {
+              "sys": {
+                "type": "Link",
+                "linkType": "Space",
+                "id": "h9dp0t9qreql"
+              }
+            },
+            "id": "3pogeXyM5dugGCmNruE9Fn",
+            "type": "Asset",
+            "createdAt": "2025-07-14T08:19:41.334Z",
+            "updatedAt": "2025-07-14T08:19:41.334Z",
+            "environment": {
+              "sys": {
+                "id": "master",
+                "type": "Link",
+                "linkType": "Environment"
+              }
+            },
+            "publishedVersion": 2,
+            "revision": 1,
+            "locale": "en-US"
+          },
+          "fields": {
+            "title": "11",
+            "file": {
+              "url": "//images.ctfassets.net/h9dp0t9qreql/3pogeXyM5dugGCmNruE9Fn/399a223901f06d4aef12d094bac6e75c/11.jpg",
+              "details": {
+                "size": 45660,
+                "image": {
+                  "width": 721,
+                  "height": 431
+                }
+              },
+              "fileName": "11.jpg",
+              "contentType": "image/jpeg"
+            }
+          }
+        },
+        {
+          "metadata": {
+            "tags": [],
+            "concepts": []
+          },
+          "sys": {
+            "space": {
+              "sys": {
+                "type": "Link",
+                "linkType": "Space",
+                "id": "h9dp0t9qreql"
+              }
+            },
+            "id": "1nwjKtWCWc0tFEVmVn6WNO",
+            "type": "Asset",
+            "createdAt": "2025-07-14T08:19:41.324Z",
+            "updatedAt": "2025-07-14T08:19:41.324Z",
+            "environment": {
+              "sys": {
+                "id": "master",
+                "type": "Link",
+                "linkType": "Environment"
+              }
+            },
+            "publishedVersion": 2,
+            "revision": 1,
+            "locale": "en-US"
+          },
+          "fields": {
+            "title": "12",
+            "file": {
+              "url": "//images.ctfassets.net/h9dp0t9qreql/1nwjKtWCWc0tFEVmVn6WNO/ca45a1f0f206b1716289bdc9b203c8b4/12.jpg",
+              "details": {
+                "size": 34695,
+                "image": {
+                  "width": 722,
+                  "height": 430
+                }
+              },
+              "fileName": "12.jpg",
+              "contentType": "image/jpeg"
+            }
+          }
+        },
+        {
+          "metadata": {
+            "tags": [],
+            "concepts": []
+          },
+          "sys": {
+            "space": {
+              "sys": {
+                "type": "Link",
+                "linkType": "Space",
+                "id": "h9dp0t9qreql"
+              }
+            },
+            "id": "4PiXvJrKe61wV4qshPZBUd",
+            "type": "Asset",
+            "createdAt": "2025-07-14T08:19:31.487Z",
+            "updatedAt": "2025-07-14T08:19:31.487Z",
+            "environment": {
+              "sys": {
+                "id": "master",
+                "type": "Link",
+                "linkType": "Environment"
+              }
+            },
+            "publishedVersion": 2,
+            "revision": 1,
+            "locale": "en-US"
+          },
+          "fields": {
+            "title": "14",
+            "file": {
+              "url": "//images.ctfassets.net/h9dp0t9qreql/4PiXvJrKe61wV4qshPZBUd/943dcd751d290256ed7faea7e91d5263/14.jpg",
+              "details": {
+                "size": 94098,
+                "image": {
+                  "width": 406,
+                  "height": 609
+                }
+              },
+              "fileName": "14.jpg",
+              "contentType": "image/jpeg"
+            }
+          }
+        },
+        {
+          "metadata": {
+            "tags": [],
+            "concepts": []
+          },
+          "sys": {
+            "space": {
+              "sys": {
+                "type": "Link",
+                "linkType": "Space",
+                "id": "h9dp0t9qreql"
+              }
+            },
+            "id": "5w4wcOmPaCIgLx9k3ABRpW",
+            "type": "Asset",
+            "createdAt": "2025-07-14T08:19:31.485Z",
+            "updatedAt": "2025-07-14T08:19:31.485Z",
+            "environment": {
+              "sys": {
+                "id": "master",
+                "type": "Link",
+                "linkType": "Environment"
+              }
+            },
+            "publishedVersion": 2,
+            "revision": 1,
+            "locale": "en-US"
+          },
+          "fields": {
+            "title": "13",
+            "file": {
+              "url": "//images.ctfassets.net/h9dp0t9qreql/5w4wcOmPaCIgLx9k3ABRpW/594acc38c61accdebe11804912748d29/13.jpg",
+              "details": {
+                "size": 279429,
+                "image": {
+                  "width": 932,
+                  "height": 621
+                }
+              },
+              "fileName": "13.jpg",
+              "contentType": "image/jpeg"
+            }
+          }
+        },
+        {
+          "metadata": {
+            "tags": [],
+            "concepts": []
+          },
+          "sys": {
+            "space": {
+              "sys": {
+                "type": "Link",
+                "linkType": "Space",
+                "id": "h9dp0t9qreql"
+              }
+            },
+            "id": "3TGuHtCVagz9S0osieBcT9",
+            "type": "Asset",
+            "createdAt": "2025-07-14T08:19:31.435Z",
+            "updatedAt": "2025-07-14T08:19:31.435Z",
+            "environment": {
+              "sys": {
+                "id": "master",
+                "type": "Link",
+                "linkType": "Environment"
+              }
+            },
+            "publishedVersion": 2,
+            "revision": 1,
+            "locale": "en-US"
+          },
+          "fields": {
+            "title": "15",
+            "file": {
+              "url": "//images.ctfassets.net/h9dp0t9qreql/3TGuHtCVagz9S0osieBcT9/85c0740a517b63a6c3ef25dfbbdf4574/15.jpg",
+              "details": {
+                "size": 67770,
+                "image": {
+                  "width": 406,
+                  "height": 609
+                }
+              },
+              "fileName": "15.jpg",
+              "contentType": "image/jpeg"
+            }
+          }
+        }
+      ],
+      "categories": [
+        {
+          "metadata": {
+            "tags": [],
+            "concepts": []
+          },
+          "sys": {
+            "space": {
+              "sys": {
+                "type": "Link",
+                "linkType": "Space",
+                "id": "h9dp0t9qreql"
+              }
+            },
+            "id": "2lp8MUUROPjz7D4I1YV22A",
+            "type": "Entry",
+            "createdAt": "2025-07-14T08:24:47.030Z",
+            "updatedAt": "2025-07-14T08:24:47.030Z",
+            "environment": {
+              "sys": {
+                "id": "master",
+                "type": "Link",
+                "linkType": "Environment"
+              }
+            },
+            "publishedVersion": 2,
+            "revision": 1,
+            "contentType": {
+              "sys": {
+                "type": "Link",
+                "linkType": "ContentType",
+                "id": "category"
+              }
+            },
+            "locale": "en-US"
+          },
+          "fields": {
+            "title": "Cinéma",
+            "image": {
+              "metadata": {
+                "tags": [],
+                "concepts": []
+              },
+              "sys": {
+                "space": {
+                  "sys": {
+                    "type": "Link",
+                    "linkType": "Space",
+                    "id": "h9dp0t9qreql"
+                  }
+                },
+                "id": "17RlcbuPmxJHybqmAnUJjY",
+                "type": "Asset",
+                "createdAt": "2025-07-14T08:23:38.382Z",
+                "updatedAt": "2025-07-14T08:23:38.382Z",
+                "environment": {
+                  "sys": {
+                    "id": "master",
+                    "type": "Link",
+                    "linkType": "Environment"
+                  }
+                },
+                "publishedVersion": 2,
+                "revision": 1,
+                "locale": "en-US"
+              },
+              "fields": {
+                "title": "icon-popcorn",
+                "file": {
+                  "url": "//images.ctfassets.net/h9dp0t9qreql/17RlcbuPmxJHybqmAnUJjY/7796e37ab50025d6b2a2b4deee8cdf7e/icon-popcorn.png",
+                  "details": {
+                    "size": 12148,
+                    "image": {
+                      "width": 66,
+                      "height": 72
+                    }
+                  },
+                  "fileName": "icon-popcorn.png",
+                  "contentType": "image/png"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "descriptionHtml": "<p>Spot publicitaire pour la marque de bijoux greenmoon jewelry pour laquelle je me suis occupé de tous les costumes. </p>"
+    }
+  },
+  {
+    "metadata": {
+      "tags": [],
+      "concepts": []
+    },
+    "sys": {
+      "space": {
+        "sys": {
+          "type": "Link",
+          "linkType": "Space",
+          "id": "h9dp0t9qreql"
+        }
+      },
+      "id": "5nc31JEEuKpAgzEDnv6R8L",
+      "type": "Entry",
+      "createdAt": "2025-08-15T15:23:30.925Z",
+      "updatedAt": "2025-08-15T15:23:30.925Z",
+      "environment": {
+        "sys": {
+          "id": "master",
+          "type": "Link",
+          "linkType": "Environment"
+        }
+      },
+      "publishedVersion": 9,
+      "revision": 1,
+      "contentType": {
+        "sys": {
+          "type": "Link",
+          "linkType": "ContentType",
+          "id": "project"
+        }
+      },
+      "locale": "en-US"
+    },
+    "fields": {
+      "title": "Nymphes",
+      "description": {
+        "data": {},
+        "content": [
+          {
+            "data": {},
+            "content": [
+              {
+                "data": {},
+                "marks": [],
+                "value": "Série de photographies argentiques représentant mon univers.",
+                "nodeType": "text"
+              }
+            ],
+            "nodeType": "paragraph"
+          }
+        ],
+        "nodeType": "document"
+      },
+      "image_main": {
+        "metadata": {
+          "tags": [],
+          "concepts": []
+        },
+        "sys": {
+          "space": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Space",
+              "id": "h9dp0t9qreql"
+            }
+          },
+          "id": "4PZD0H6eKl5JBADHnF2Jpx",
+          "type": "Asset",
+          "createdAt": "2025-08-15T15:22:28.668Z",
+          "updatedAt": "2025-08-15T15:22:28.668Z",
+          "environment": {
+            "sys": {
+              "id": "master",
+              "type": "Link",
+              "linkType": "Environment"
+            }
+          },
+          "publishedVersion": 2,
+          "revision": 1,
+          "locale": "en-US"
+        },
+        "fields": {
+          "title": "31 square",
+          "file": {
+            "url": "//images.ctfassets.net/h9dp0t9qreql/4PZD0H6eKl5JBADHnF2Jpx/d788b3ad0fd56ee99a5d41c7bf3ea29c/31_square.jpg",
+            "details": {
+              "size": 269695,
+              "image": {
+                "width": 717,
+                "height": 717
+              }
+            },
+            "fileName": "31_square.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      },
+      "images": [
+        {
+          "metadata": {
+            "tags": [],
+            "concepts": []
+          },
+          "sys": {
+            "space": {
+              "sys": {
+                "type": "Link",
+                "linkType": "Space",
+                "id": "h9dp0t9qreql"
+              }
+            },
+            "id": "2tolv81ksA1nAQTPvWCcNR",
+            "type": "Asset",
+            "createdAt": "2025-08-15T15:22:28.666Z",
+            "updatedAt": "2025-08-15T15:22:28.666Z",
+            "environment": {
+              "sys": {
+                "id": "master",
+                "type": "Link",
+                "linkType": "Environment"
+              }
+            },
+            "publishedVersion": 2,
+            "revision": 1,
+            "locale": "en-US"
+          },
+          "fields": {
+            "title": "31",
+            "file": {
+              "url": "//images.ctfassets.net/h9dp0t9qreql/2tolv81ksA1nAQTPvWCcNR/96671eeea805bb973a0afbbe4df4efc2/31.jpg",
+              "details": {
+                "size": 501185,
+                "image": {
+                  "width": 721,
+                  "height": 1028
+                }
+              },
+              "fileName": "31.jpg",
+              "contentType": "image/jpeg"
+            }
+          }
+        },
+        {
+          "metadata": {
+            "tags": [],
+            "concepts": []
+          },
+          "sys": {
+            "space": {
+              "sys": {
+                "type": "Link",
+                "linkType": "Space",
+                "id": "h9dp0t9qreql"
+              }
+            },
+            "id": "4Viu7SE5c9nJMQWxSupq15",
+            "type": "Asset",
+            "createdAt": "2025-08-15T15:22:28.663Z",
+            "updatedAt": "2025-08-15T15:22:28.663Z",
+            "environment": {
+              "sys": {
+                "id": "master",
+                "type": "Link",
+                "linkType": "Environment"
+              }
+            },
+            "publishedVersion": 2,
+            "revision": 1,
+            "locale": "en-US"
+          },
+          "fields": {
+            "title": "33",
+            "file": {
+              "url": "//images.ctfassets.net/h9dp0t9qreql/4Viu7SE5c9nJMQWxSupq15/8d07e3e7c3ab1172fc3bd2148177bfc9/33.png",
+              "details": {
+                "size": 2735922,
+                "image": {
+                  "width": 871,
+                  "height": 1161
+                }
+              },
+              "fileName": "33.png",
+              "contentType": "image/png"
+            }
+          }
+        },
+        {
+          "metadata": {
+            "tags": [],
+            "concepts": []
+          },
+          "sys": {
+            "space": {
+              "sys": {
+                "type": "Link",
+                "linkType": "Space",
+                "id": "h9dp0t9qreql"
+              }
+            },
+            "id": "tFWkZW1zixnGkzCEU2ERO",
+            "type": "Asset",
+            "createdAt": "2025-08-15T15:22:28.661Z",
+            "updatedAt": "2025-08-15T15:22:28.661Z",
+            "environment": {
+              "sys": {
+                "id": "master",
+                "type": "Link",
+                "linkType": "Environment"
+              }
+            },
+            "publishedVersion": 2,
+            "revision": 1,
+            "locale": "en-US"
+          },
+          "fields": {
+            "title": "36",
+            "file": {
+              "url": "//images.ctfassets.net/h9dp0t9qreql/tFWkZW1zixnGkzCEU2ERO/85d21928123ac64bbc4fc23421eed2c2/36.png",
+              "details": {
+                "size": 3398875,
+                "image": {
+                  "width": 909,
+                  "height": 1211
+                }
+              },
+              "fileName": "36.png",
+              "contentType": "image/png"
+            }
+          }
+        },
+        {
+          "metadata": {
+            "tags": [],
+            "concepts": []
+          },
+          "sys": {
+            "space": {
+              "sys": {
+                "type": "Link",
+                "linkType": "Space",
+                "id": "h9dp0t9qreql"
+              }
+            },
+            "id": "5NHeAt0qsYS6VGRRZerQyu",
+            "type": "Asset",
+            "createdAt": "2025-08-15T15:22:28.659Z",
+            "updatedAt": "2025-08-15T15:22:28.659Z",
+            "environment": {
+              "sys": {
+                "id": "master",
+                "type": "Link",
+                "linkType": "Environment"
+              }
+            },
+            "publishedVersion": 2,
+            "revision": 1,
+            "locale": "en-US"
+          },
+          "fields": {
+            "title": "35",
+            "file": {
+              "url": "//images.ctfassets.net/h9dp0t9qreql/5NHeAt0qsYS6VGRRZerQyu/08b723e3bb764cdc897c2e2346e64eee/35.png",
+              "details": {
+                "size": 7157442,
+                "image": {
+                  "width": 1317,
+                  "height": 1755
+                }
+              },
+              "fileName": "35.png",
+              "contentType": "image/png"
+            }
+          }
+        },
+        {
+          "metadata": {
+            "tags": [],
+            "concepts": []
+          },
+          "sys": {
+            "space": {
+              "sys": {
+                "type": "Link",
+                "linkType": "Space",
+                "id": "h9dp0t9qreql"
+              }
+            },
+            "id": "6aPPlxodoCF4WVcnZkpKzL",
+            "type": "Asset",
+            "createdAt": "2025-08-15T15:22:28.655Z",
+            "updatedAt": "2025-08-15T15:22:28.655Z",
+            "environment": {
+              "sys": {
+                "id": "master",
+                "type": "Link",
+                "linkType": "Environment"
+              }
+            },
+            "publishedVersion": 2,
+            "revision": 1,
+            "locale": "en-US"
+          },
+          "fields": {
+            "title": "38",
+            "file": {
+              "url": "//images.ctfassets.net/h9dp0t9qreql/6aPPlxodoCF4WVcnZkpKzL/eb8fd99798af01204e1b20cf5b18532b/38.png",
+              "details": {
+                "size": 1965680,
+                "image": {
+                  "width": 913,
+                  "height": 685
+                }
+              },
+              "fileName": "38.png",
+              "contentType": "image/png"
+            }
+          }
+        },
+        {
+          "metadata": {
+            "tags": [],
+            "concepts": []
+          },
+          "sys": {
+            "space": {
+              "sys": {
+                "type": "Link",
+                "linkType": "Space",
+                "id": "h9dp0t9qreql"
+              }
+            },
+            "id": "6aNmLsdVDH84zvRGXSxZFT",
+            "type": "Asset",
+            "createdAt": "2025-08-15T15:22:28.652Z",
+            "updatedAt": "2025-08-15T15:22:28.652Z",
+            "environment": {
+              "sys": {
+                "id": "master",
+                "type": "Link",
+                "linkType": "Environment"
+              }
+            },
+            "publishedVersion": 2,
+            "revision": 1,
+            "locale": "en-US"
+          },
+          "fields": {
+            "title": "37",
+            "file": {
+              "url": "//images.ctfassets.net/h9dp0t9qreql/6aNmLsdVDH84zvRGXSxZFT/5a5cb1832fe1f0b871f2af67d97003ae/37.png",
+              "details": {
+                "size": 1772165,
+                "image": {
+                  "width": 961,
+                  "height": 721
+                }
+              },
+              "fileName": "37.png",
+              "contentType": "image/png"
+            }
+          }
+        },
+        {
+          "metadata": {
+            "tags": [],
+            "concepts": []
+          },
+          "sys": {
+            "space": {
+              "sys": {
+                "type": "Link",
+                "linkType": "Space",
+                "id": "h9dp0t9qreql"
+              }
+            },
+            "id": "2yA4BHoLqBG3RpjRnnLCxB",
+            "type": "Asset",
+            "createdAt": "2025-08-15T15:22:28.657Z",
+            "updatedAt": "2025-08-15T15:22:28.657Z",
+            "environment": {
+              "sys": {
+                "id": "master",
+                "type": "Link",
+                "linkType": "Environment"
+              }
+            },
+            "publishedVersion": 2,
+            "revision": 1,
+            "locale": "en-US"
+          },
+          "fields": {
+            "title": "40",
+            "file": {
+              "url": "//images.ctfassets.net/h9dp0t9qreql/2yA4BHoLqBG3RpjRnnLCxB/7203690d7a4907e0ae3b48efec24618a/40.jpg",
+              "details": {
+                "size": 302431,
+                "image": {
+                  "width": 722,
+                  "height": 1028
+                }
+              },
+              "fileName": "40.jpg",
+              "contentType": "image/jpeg"
+            }
+          }
+        },
+        {
+          "metadata": {
+            "tags": [],
+            "concepts": []
+          },
+          "sys": {
+            "space": {
+              "sys": {
+                "type": "Link",
+                "linkType": "Space",
+                "id": "h9dp0t9qreql"
+              }
+            },
+            "id": "1G3BMyXok5J6ZsHgjpnPOz",
+            "type": "Asset",
+            "createdAt": "2025-08-15T15:22:28.649Z",
+            "updatedAt": "2025-08-15T15:22:28.649Z",
+            "environment": {
+              "sys": {
+                "id": "master",
+                "type": "Link",
+                "linkType": "Environment"
+              }
+            },
+            "publishedVersion": 2,
+            "revision": 1,
+            "locale": "en-US"
+          },
+          "fields": {
+            "title": "32",
+            "file": {
+              "url": "//images.ctfassets.net/h9dp0t9qreql/1G3BMyXok5J6ZsHgjpnPOz/883d367363fa6e65c22586b7f3ade82b/32.jpg",
+              "details": {
+                "size": 2249135,
+                "image": {
+                  "width": 1313,
+                  "height": 1751
+                }
+              },
+              "fileName": "32.jpg",
+              "contentType": "image/jpeg"
+            }
+          }
+        }
+      ],
+      "categories": [
+        {
+          "metadata": {
+            "tags": [],
+            "concepts": []
+          },
+          "sys": {
+            "space": {
+              "sys": {
+                "type": "Link",
+                "linkType": "Space",
+                "id": "h9dp0t9qreql"
+              }
+            },
+            "id": "1sgBcedB21d4jejmuds7e3",
+            "type": "Entry",
+            "createdAt": "2025-07-14T08:23:40.492Z",
+            "updatedAt": "2025-07-14T08:23:40.492Z",
+            "environment": {
+              "sys": {
+                "id": "master",
+                "type": "Link",
+                "linkType": "Environment"
+              }
+            },
+            "publishedVersion": 3,
+            "revision": 1,
+            "contentType": {
+              "sys": {
+                "type": "Link",
+                "linkType": "ContentType",
+                "id": "category"
+              }
+            },
+            "locale": "en-US"
+          },
+          "fields": {
+            "title": "Photo",
+            "image": {
+              "metadata": {
+                "tags": [],
+                "concepts": []
+              },
+              "sys": {
+                "space": {
+                  "sys": {
+                    "type": "Link",
+                    "linkType": "Space",
+                    "id": "h9dp0t9qreql"
+                  }
+                },
+                "id": "d5VtRYNQKeeJfgZlGwxTt",
+                "type": "Asset",
+                "createdAt": "2025-07-14T08:23:38.376Z",
+                "updatedAt": "2025-07-14T08:23:38.376Z",
+                "environment": {
+                  "sys": {
+                    "id": "master",
+                    "type": "Link",
+                    "linkType": "Environment"
+                  }
+                },
+                "publishedVersion": 2,
+                "revision": 1,
+                "locale": "en-US"
+              },
+              "fields": {
+                "title": "icon-diana",
+                "file": {
+                  "url": "//images.ctfassets.net/h9dp0t9qreql/d5VtRYNQKeeJfgZlGwxTt/7abb6abe253721001912204b237ff641/icon-diana.png",
+                  "details": {
+                    "size": 11987,
+                    "image": {
+                      "width": 80,
+                      "height": 68
+                    }
+                  },
+                  "fileName": "icon-diana.png",
+                  "contentType": "image/png"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "descriptionHtml": "<p>Série de photographies argentiques représentant mon univers.</p>"
+    }
+  },
+  {
+    "metadata": {
+      "tags": [],
+      "concepts": []
+    },
+    "sys": {
+      "space": {
+        "sys": {
+          "type": "Link",
+          "linkType": "Space",
+          "id": "h9dp0t9qreql"
+        }
+      },
+      "id": "1iEyPycuKBA8GO29qxZ5F3",
+      "type": "Entry",
+      "createdAt": "2025-08-19T16:01:56.959Z",
+      "updatedAt": "2025-08-19T16:01:56.959Z",
+      "environment": {
+        "sys": {
+          "id": "master",
+          "type": "Link",
+          "linkType": "Environment"
+        }
+      },
+      "publishedVersion": 5,
+      "revision": 1,
+      "contentType": {
+        "sys": {
+          "type": "Link",
+          "linkType": "ContentType",
+          "id": "project"
+        }
+      },
+      "locale": "en-US"
+    },
+    "fields": {
+      "title": "Magia Negra",
+      "description": {
+        "data": {},
+        "content": [
+          {
+            "data": {},
+            "content": [
+              {
+                "data": {},
+                "marks": [],
+                "value": "Costume pour le tournage du clip de “Magia Negra” chantée par l’artiste suisse Lum. ",
+                "nodeType": "text"
+              }
+            ],
+            "nodeType": "paragraph"
+          }
+        ],
+        "nodeType": "document"
+      },
+      "image_main": {
+        "metadata": {
+          "tags": [],
+          "concepts": []
+        },
+        "sys": {
+          "space": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Space",
+              "id": "h9dp0t9qreql"
+            }
+          },
+          "id": "5WHdlbliWKtnSeUipgbJVN",
+          "type": "Asset",
+          "createdAt": "2025-08-19T16:01:16.180Z",
+          "updatedAt": "2025-08-19T16:01:16.180Z",
+          "environment": {
+            "sys": {
+              "id": "master",
+              "type": "Link",
+              "linkType": "Environment"
+            }
+          },
+          "publishedVersion": 3,
+          "revision": 1,
+          "locale": "en-US"
+        },
+        "fields": {
+          "title": "52 square",
+          "file": {
+            "url": "//images.ctfassets.net/h9dp0t9qreql/5WHdlbliWKtnSeUipgbJVN/7ad78a0c0f7f1209adfd83985c30aa7e/52_square.jpg",
+            "details": {
+              "size": 305874,
+              "image": {
+                "width": 1311,
+                "height": 1311
+              }
+            },
+            "fileName": "52_square.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      },
+      "images": [
+        {
+          "metadata": {
+            "tags": [],
+            "concepts": []
+          },
+          "sys": {
+            "space": {
+              "sys": {
+                "type": "Link",
+                "linkType": "Space",
+                "id": "h9dp0t9qreql"
+              }
+            },
+            "id": "50i9dvfWgsjMLPfFSQLxGB",
+            "type": "Asset",
+            "createdAt": "2025-07-14T08:19:31.365Z",
+            "updatedAt": "2025-07-14T08:19:31.365Z",
+            "environment": {
+              "sys": {
+                "id": "master",
+                "type": "Link",
+                "linkType": "Environment"
+              }
+            },
+            "publishedVersion": 2,
+            "revision": 1,
+            "locale": "en-US"
+          },
+          "fields": {
+            "title": "51",
+            "file": {
+              "url": "//images.ctfassets.net/h9dp0t9qreql/50i9dvfWgsjMLPfFSQLxGB/db3978f2bc08bcb1475ab60673bcad0c/51.jpg",
+              "details": {
+                "size": 141149,
+                "image": {
+                  "width": 1241,
+                  "height": 1477
+                }
+              },
+              "fileName": "51.jpg",
+              "contentType": "image/jpeg"
+            }
+          }
+        },
+        {
+          "metadata": {
+            "tags": [],
+            "concepts": []
+          },
+          "sys": {
+            "space": {
+              "sys": {
+                "type": "Link",
+                "linkType": "Space",
+                "id": "h9dp0t9qreql"
+              }
+            },
+            "id": "30I88gjGZKtwekv2MQ54Iw",
+            "type": "Asset",
+            "createdAt": "2025-07-14T08:19:31.358Z",
+            "updatedAt": "2025-07-14T08:19:31.358Z",
+            "environment": {
+              "sys": {
+                "id": "master",
+                "type": "Link",
+                "linkType": "Environment"
+              }
+            },
+            "publishedVersion": 2,
+            "revision": 1,
+            "locale": "en-US"
+          },
+          "fields": {
+            "title": "50",
+            "file": {
+              "url": "//images.ctfassets.net/h9dp0t9qreql/30I88gjGZKtwekv2MQ54Iw/139d7137f8bbf816968b90652dc93ec2/50.jpg",
+              "details": {
+                "size": 96966,
+                "image": {
+                  "width": 722,
+                  "height": 1028
+                }
+              },
+              "fileName": "50.jpg",
+              "contentType": "image/jpeg"
+            }
+          }
+        },
+        {
+          "metadata": {
+            "tags": [],
+            "concepts": []
+          },
+          "sys": {
+            "space": {
+              "sys": {
+                "type": "Link",
+                "linkType": "Space",
+                "id": "h9dp0t9qreql"
+              }
+            },
+            "id": "3Uh6dHtPKs0y2Y7RDEEBrJ",
+            "type": "Asset",
+            "createdAt": "2025-07-14T08:19:31.367Z",
+            "updatedAt": "2025-07-14T08:19:31.367Z",
+            "environment": {
+              "sys": {
+                "id": "master",
+                "type": "Link",
+                "linkType": "Environment"
+              }
+            },
+            "publishedVersion": 2,
+            "revision": 1,
+            "locale": "en-US"
+          },
+          "fields": {
+            "title": "52",
+            "file": {
+              "url": "//images.ctfassets.net/h9dp0t9qreql/3Uh6dHtPKs0y2Y7RDEEBrJ/9825e0f2d641fd9addf043cba0fc0cf9/52.jpg",
+              "details": {
+                "size": 183969,
+                "image": {
+                  "width": 1320,
+                  "height": 1571
+                }
+              },
+              "fileName": "52.jpg",
+              "contentType": "image/jpeg"
+            }
+          }
+        }
+      ],
+      "categories": [
+        {
+          "metadata": {
+            "tags": [],
+            "concepts": []
+          },
+          "sys": {
+            "space": {
+              "sys": {
+                "type": "Link",
+                "linkType": "Space",
+                "id": "h9dp0t9qreql"
+              }
+            },
+            "id": "2PFM6efHsFavX1FQJBFoti",
+            "type": "Entry",
+            "createdAt": "2025-07-14T08:24:08.219Z",
+            "updatedAt": "2025-07-14T08:24:08.219Z",
+            "environment": {
+              "sys": {
+                "id": "master",
+                "type": "Link",
+                "linkType": "Environment"
+              }
+            },
+            "publishedVersion": 3,
+            "revision": 1,
+            "contentType": {
+              "sys": {
+                "type": "Link",
+                "linkType": "ContentType",
+                "id": "category"
+              }
+            },
+            "locale": "en-US"
+          },
+          "fields": {
+            "title": "Vêtement",
+            "image": {
+              "metadata": {
+                "tags": [],
+                "concepts": []
+              },
+              "sys": {
+                "space": {
+                  "sys": {
+                    "type": "Link",
+                    "linkType": "Space",
+                    "id": "h9dp0t9qreql"
+                  }
+                },
+                "id": "70RQZ7fdzyWRJjht3jVdnM",
+                "type": "Asset",
+                "createdAt": "2025-07-14T08:23:38.385Z",
+                "updatedAt": "2025-07-14T08:23:38.385Z",
+                "environment": {
+                  "sys": {
+                    "id": "master",
+                    "type": "Link",
+                    "linkType": "Environment"
+                  }
+                },
+                "publishedVersion": 2,
+                "revision": 1,
+                "locale": "en-US"
+              },
+              "fields": {
+                "title": "icon-vetement",
+                "file": {
+                  "url": "//images.ctfassets.net/h9dp0t9qreql/70RQZ7fdzyWRJjht3jVdnM/c6c849724ff8abe63a7d6c940c6def8b/icon-vetement.png",
+                  "details": {
+                    "size": 13778,
+                    "image": {
+                      "width": 78,
+                      "height": 74
+                    }
+                  },
+                  "fileName": "icon-vetement.png",
+                  "contentType": "image/png"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "descriptionHtml": "<p>Costume pour le tournage du clip de “Magia Negra” chantée par l’artiste suisse Lum. </p>"
+    }
+  },
+  {
+    "metadata": {
+      "tags": [],
+      "concepts": []
+    },
+    "sys": {
+      "space": {
+        "sys": {
+          "type": "Link",
+          "linkType": "Space",
+          "id": "h9dp0t9qreql"
+        }
+      },
+      "id": "2YWmR7AtURrvBej2xIemB4",
+      "type": "Entry",
+      "createdAt": "2025-08-19T16:00:12.939Z",
+      "updatedAt": "2025-08-19T16:00:24.453Z",
+      "environment": {
+        "sys": {
+          "id": "master",
+          "type": "Link",
+          "linkType": "Environment"
+        }
+      },
+      "publishedVersion": 9,
+      "revision": 2,
+      "contentType": {
+        "sys": {
+          "type": "Link",
+          "linkType": "ContentType",
+          "id": "project"
+        }
+      },
+      "locale": "en-US"
+    },
+    "fields": {
+      "title": "Drag",
+      "description": {
+        "data": {},
+        "content": [
+          {
+            "data": {},
+            "content": [
+              {
+                "data": {},
+                "marks": [],
+                "value": "Costumes réalisés pour les performances drag de mon persona ",
+                "nodeType": "text"
+              },
+              {
+                "data": {},
+                "marks": [
+                  {
+                    "type": "italic"
+                  }
+                ],
+                "value": "La Belladone ",
+                "nodeType": "text"
+              }
+            ],
+            "nodeType": "paragraph"
+          }
+        ],
+        "nodeType": "document"
+      },
+      "image_main": {
+        "metadata": {
+          "tags": [],
+          "concepts": []
+        },
+        "sys": {
+          "space": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Space",
+              "id": "h9dp0t9qreql"
+            }
+          },
+          "id": "4GVzETKfUQiPNSoxEG0VBH",
+          "type": "Asset",
+          "createdAt": "2025-08-19T15:58:54.941Z",
+          "updatedAt": "2025-08-19T15:58:54.941Z",
+          "environment": {
+            "sys": {
+              "id": "master",
+              "type": "Link",
+              "linkType": "Environment"
+            }
+          },
+          "publishedVersion": 3,
+          "revision": 1,
+          "locale": "en-US"
+        },
+        "fields": {
+          "title": "41 square",
+          "file": {
+            "url": "//images.ctfassets.net/h9dp0t9qreql/4GVzETKfUQiPNSoxEG0VBH/d0d4bfce944172eb9b0e02954369699f/41_square.jpg",
+            "details": {
+              "size": 4781784,
+              "image": {
+                "width": 2744,
+                "height": 2744
+              }
+            },
+            "fileName": "41_square.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      },
+      "images": [
+        {
+          "metadata": {
+            "tags": [],
+            "concepts": []
+          },
+          "sys": {
+            "space": {
+              "sys": {
+                "type": "Link",
+                "linkType": "Space",
+                "id": "h9dp0t9qreql"
+              }
+            },
+            "id": "1p9XZN43NX1It6nizxOQ0e",
+            "type": "Asset",
+            "createdAt": "2025-07-14T08:19:31.385Z",
+            "updatedAt": "2025-07-14T08:19:31.385Z",
+            "environment": {
+              "sys": {
+                "id": "master",
+                "type": "Link",
+                "linkType": "Environment"
+              }
+            },
+            "publishedVersion": 2,
+            "revision": 1,
+            "locale": "en-US"
+          },
+          "fields": {
+            "title": "41",
+            "file": {
+              "url": "//images.ctfassets.net/h9dp0t9qreql/1p9XZN43NX1It6nizxOQ0e/8edd0347893aa1f371603d08bcfa7abb/41.jpg",
+              "details": {
+                "size": 1496316,
+                "image": {
+                  "width": 1708,
+                  "height": 2560
+                }
+              },
+              "fileName": "41.jpg",
+              "contentType": "image/jpeg"
+            }
+          }
+        },
+        {
+          "metadata": {
+            "tags": [],
+            "concepts": []
+          },
+          "sys": {
+            "space": {
+              "sys": {
+                "type": "Link",
+                "linkType": "Space",
+                "id": "h9dp0t9qreql"
+              }
+            },
+            "id": "7lAXSOFYVQ7BOjNR1L7MyF",
+            "type": "Asset",
+            "createdAt": "2025-07-14T08:19:31.370Z",
+            "updatedAt": "2025-07-14T08:28:55.765Z",
+            "environment": {
+              "sys": {
+                "id": "master",
+                "type": "Link",
+                "linkType": "Environment"
+              }
+            },
+            "publishedVersion": 5,
+            "revision": 2,
+            "locale": "en-US"
+          },
+          "fields": {
+            "title": "44",
+            "file": {
+              "url": "//images.ctfassets.net/h9dp0t9qreql/7lAXSOFYVQ7BOjNR1L7MyF/f293f5d6014ec6f6c2e7da37a6404545/44.jpg",
+              "details": {
+                "size": 1313124,
+                "image": {
+                  "width": 1697,
+                  "height": 2560
+                }
+              },
+              "fileName": "44.jpg",
+              "contentType": "image/jpeg"
+            }
+          }
+        },
+        {
+          "metadata": {
+            "tags": [],
+            "concepts": []
+          },
+          "sys": {
+            "space": {
+              "sys": {
+                "type": "Link",
+                "linkType": "Space",
+                "id": "h9dp0t9qreql"
+              }
+            },
+            "id": "U4QEYDhW5hCOuFun1dkVq",
+            "type": "Asset",
+            "createdAt": "2025-07-14T08:19:31.381Z",
+            "updatedAt": "2025-07-14T08:28:38.284Z",
+            "environment": {
+              "sys": {
+                "id": "master",
+                "type": "Link",
+                "linkType": "Environment"
+              }
+            },
+            "publishedVersion": 5,
+            "revision": 2,
+            "locale": "en-US"
+          },
+          "fields": {
+            "title": "45",
+            "file": {
+              "url": "//images.ctfassets.net/h9dp0t9qreql/U4QEYDhW5hCOuFun1dkVq/7dd737a1c28ef265f307ad1fe6fcda83/45.jpg",
+              "details": {
+                "size": 979452,
+                "image": {
+                  "width": 1697,
+                  "height": 2560
+                }
+              },
+              "fileName": "45.jpg",
+              "contentType": "image/jpeg"
+            }
+          }
+        },
+        {
+          "metadata": {
+            "tags": [],
+            "concepts": []
+          },
+          "sys": {
+            "space": {
+              "sys": {
+                "type": "Link",
+                "linkType": "Space",
+                "id": "h9dp0t9qreql"
+              }
+            },
+            "id": "6iCicLyjV7V5ZXxFmMXGME",
+            "type": "Asset",
+            "createdAt": "2025-07-14T08:19:31.376Z",
+            "updatedAt": "2025-07-14T08:19:31.376Z",
+            "environment": {
+              "sys": {
+                "id": "master",
+                "type": "Link",
+                "linkType": "Environment"
+              }
+            },
+            "publishedVersion": 2,
+            "revision": 1,
+            "locale": "en-US"
+          },
+          "fields": {
+            "title": "46",
+            "file": {
+              "url": "//images.ctfassets.net/h9dp0t9qreql/6iCicLyjV7V5ZXxFmMXGME/65835a47fdbce011799cd14fc724f3c6/46.jpg",
+              "details": {
+                "size": 363878,
+                "image": {
+                  "width": 1707,
+                  "height": 2560
+                }
+              },
+              "fileName": "46.jpg",
+              "contentType": "image/jpeg"
+            }
+          }
+        },
+        {
+          "metadata": {
+            "tags": [],
+            "concepts": []
+          },
+          "sys": {
+            "space": {
+              "sys": {
+                "type": "Link",
+                "linkType": "Space",
+                "id": "h9dp0t9qreql"
+              }
+            },
+            "id": "21RUbVV4w8JVbaDTfSh10g",
+            "type": "Asset",
+            "createdAt": "2025-07-14T08:19:31.374Z",
+            "updatedAt": "2025-07-14T08:19:31.374Z",
+            "environment": {
+              "sys": {
+                "id": "master",
+                "type": "Link",
+                "linkType": "Environment"
+              }
+            },
+            "publishedVersion": 2,
+            "revision": 1,
+            "locale": "en-US"
+          },
+          "fields": {
+            "title": "47",
+            "file": {
+              "url": "//images.ctfassets.net/h9dp0t9qreql/21RUbVV4w8JVbaDTfSh10g/50f175deca963accc90cedd2c27bd3a3/47.jpg",
+              "details": {
+                "size": 264116,
+                "image": {
+                  "width": 1160,
+                  "height": 1969
+                }
+              },
+              "fileName": "47.jpg",
+              "contentType": "image/jpeg"
+            }
+          }
+        },
+        {
+          "metadata": {
+            "tags": [],
+            "concepts": []
+          },
+          "sys": {
+            "space": {
+              "sys": {
+                "type": "Link",
+                "linkType": "Space",
+                "id": "h9dp0t9qreql"
+              }
+            },
+            "id": "4GyE9IaS1bHav1SzYuzuNu",
+            "type": "Asset",
+            "createdAt": "2025-07-14T08:19:31.373Z",
+            "updatedAt": "2025-07-14T08:19:31.373Z",
+            "environment": {
+              "sys": {
+                "id": "master",
+                "type": "Link",
+                "linkType": "Environment"
+              }
+            },
+            "publishedVersion": 2,
+            "revision": 1,
+            "locale": "en-US"
+          },
+          "fields": {
+            "title": "43",
+            "file": {
+              "url": "//images.ctfassets.net/h9dp0t9qreql/4GyE9IaS1bHav1SzYuzuNu/2fe21a8aa07c2a83ca7d06d3685abc4e/43.jpg",
+              "details": {
+                "size": 1517865,
+                "image": {
+                  "width": 1920,
+                  "height": 2560
+                }
+              },
+              "fileName": "43.jpg",
+              "contentType": "image/jpeg"
+            }
+          }
+        },
+        {
+          "metadata": {
+            "tags": [],
+            "concepts": []
+          },
+          "sys": {
+            "space": {
+              "sys": {
+                "type": "Link",
+                "linkType": "Space",
+                "id": "h9dp0t9qreql"
+              }
+            },
+            "id": "7jzaYFY71HyvK8CvnbwB4H",
+            "type": "Asset",
+            "createdAt": "2025-07-14T08:19:31.378Z",
+            "updatedAt": "2025-07-14T08:19:31.378Z",
+            "environment": {
+              "sys": {
+                "id": "master",
+                "type": "Link",
+                "linkType": "Environment"
+              }
+            },
+            "publishedVersion": 2,
+            "revision": 1,
+            "locale": "en-US"
+          },
+          "fields": {
+            "title": "42",
+            "file": {
+              "url": "//images.ctfassets.net/h9dp0t9qreql/7jzaYFY71HyvK8CvnbwB4H/15d2682fb8be0fa3a61fe47e65f0b7e3/42.jpg",
+              "details": {
+                "size": 142663,
+                "image": {
+                  "width": 721,
+                  "height": 1028
+                }
+              },
+              "fileName": "42.jpg",
+              "contentType": "image/jpeg"
+            }
+          }
+        },
+        {
+          "metadata": {
+            "tags": [],
+            "concepts": []
+          },
+          "sys": {
+            "space": {
+              "sys": {
+                "type": "Link",
+                "linkType": "Space",
+                "id": "h9dp0t9qreql"
+              }
+            },
+            "id": "3hh37xqDvFfs1ybo1Tx5qJ",
+            "type": "Asset",
+            "createdAt": "2025-07-14T08:19:31.363Z",
+            "updatedAt": "2025-07-14T08:19:31.363Z",
+            "environment": {
+              "sys": {
+                "id": "master",
+                "type": "Link",
+                "linkType": "Environment"
+              }
+            },
+            "publishedVersion": 2,
+            "revision": 1,
+            "locale": "en-US"
+          },
+          "fields": {
+            "title": "48",
+            "file": {
+              "url": "//images.ctfassets.net/h9dp0t9qreql/3hh37xqDvFfs1ybo1Tx5qJ/ac742ba04c81f197eca0bb3403cc93a8/48.jpg",
+              "details": {
+                "size": 188884,
+                "image": {
+                  "width": 1080,
+                  "height": 1347
+                }
+              },
+              "fileName": "48.jpg",
+              "contentType": "image/jpeg"
+            }
+          }
+        },
+        {
+          "metadata": {
+            "tags": [],
+            "concepts": []
+          },
+          "sys": {
+            "space": {
+              "sys": {
+                "type": "Link",
+                "linkType": "Space",
+                "id": "h9dp0t9qreql"
+              }
+            },
+            "id": "6G68jyWTGqV0IB4mXfwzbs",
+            "type": "Asset",
+            "createdAt": "2025-07-14T08:19:31.361Z",
+            "updatedAt": "2025-07-14T08:19:31.361Z",
+            "environment": {
+              "sys": {
+                "id": "master",
+                "type": "Link",
+                "linkType": "Environment"
+              }
+            },
+            "publishedVersion": 2,
+            "revision": 1,
+            "locale": "en-US"
+          },
+          "fields": {
+            "title": "49",
+            "file": {
+              "url": "//images.ctfassets.net/h9dp0t9qreql/6G68jyWTGqV0IB4mXfwzbs/6492958d5ef46c91cf722d8b06e457d7/49.jpg",
+              "details": {
+                "size": 384020,
+                "image": {
+                  "width": 1080,
+                  "height": 2340
+                }
+              },
+              "fileName": "49.jpg",
+              "contentType": "image/jpeg"
+            }
+          }
+        }
+      ],
+      "categories": [
+        {
+          "metadata": {
+            "tags": [],
+            "concepts": []
+          },
+          "sys": {
+            "space": {
+              "sys": {
+                "type": "Link",
+                "linkType": "Space",
+                "id": "h9dp0t9qreql"
+              }
+            },
+            "id": "2hubP5441lzpeL0Jnebx5q",
+            "type": "Entry",
+            "createdAt": "2025-07-14T08:24:34.578Z",
+            "updatedAt": "2025-07-14T08:24:34.578Z",
+            "environment": {
+              "sys": {
+                "id": "master",
+                "type": "Link",
+                "linkType": "Environment"
+              }
+            },
+            "publishedVersion": 3,
+            "revision": 1,
+            "contentType": {
+              "sys": {
+                "type": "Link",
+                "linkType": "ContentType",
+                "id": "category"
+              }
+            },
+            "locale": "en-US"
+          },
+          "fields": {
+            "title": "Drag",
+            "image": {
+              "metadata": {
+                "tags": [],
+                "concepts": []
+              },
+              "sys": {
+                "space": {
+                  "sys": {
+                    "type": "Link",
+                    "linkType": "Space",
+                    "id": "h9dp0t9qreql"
+                  }
+                },
+                "id": "ddq3cLZJ0wXiJGz7Auj0O",
+                "type": "Asset",
+                "createdAt": "2025-07-14T08:23:38.380Z",
+                "updatedAt": "2025-07-14T08:23:38.380Z",
+                "environment": {
+                  "sys": {
+                    "id": "master",
+                    "type": "Link",
+                    "linkType": "Environment"
+                  }
+                },
+                "publishedVersion": 2,
+                "revision": 1,
+                "locale": "en-US"
+              },
+              "fields": {
+                "title": "icon-poudriere",
+                "file": {
+                  "url": "//images.ctfassets.net/h9dp0t9qreql/ddq3cLZJ0wXiJGz7Auj0O/6d2c5a7946556bf1c15d167e7b37b58b/icon-poudriere.png",
+                  "details": {
+                    "size": 9053,
+                    "image": {
+                      "width": 62,
+                      "height": 76
+                    }
+                  },
+                  "fileName": "icon-poudriere.png",
+                  "contentType": "image/png"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "descriptionHtml": "<p>Costumes réalisés pour les performances drag de mon persona <i>La Belladone </i></p>"
+    }
+  },
+  {
+    "metadata": {
+      "tags": [],
+      "concepts": []
+    },
+    "sys": {
+      "space": {
+        "sys": {
+          "type": "Link",
+          "linkType": "Space",
+          "id": "h9dp0t9qreql"
+        }
+      },
+      "id": "4QN5XGtTzXjsIjHKIhxjjO",
+      "type": "Entry",
+      "createdAt": "2025-08-19T15:56:38.045Z",
+      "updatedAt": "2025-08-19T16:14:01.038Z",
+      "environment": {
+        "sys": {
+          "id": "master",
+          "type": "Link",
+          "linkType": "Environment"
+        }
+      },
+      "publishedVersion": 8,
+      "revision": 2,
+      "contentType": {
+        "sys": {
+          "type": "Link",
+          "linkType": "ContentType",
+          "id": "project"
+        }
+      },
+      "locale": "en-US"
+    },
+    "fields": {
+      "title": "Diplôme licence pro",
+      "description": {
+        "data": {},
+        "content": [
+          {
+            "data": {},
+            "content": [
+              {
+                "data": {},
+                "marks": [],
+                "value": "Projet de diplôme pour la licence pro, réinterprétation du mythe d’Orphée inspiré du film éponyme de Jean Cocteau en une comédie musicale dans les années 60 ",
+                "nodeType": "text"
+              }
+            ],
+            "nodeType": "paragraph"
+          }
+        ],
+        "nodeType": "document"
+      },
+      "image_main": {
+        "metadata": {
+          "tags": [],
+          "concepts": []
+        },
+        "sys": {
+          "space": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Space",
+              "id": "h9dp0t9qreql"
+            }
+          },
+          "id": "6LB0AFZngBNOW9LH6tfhQ7",
+          "type": "Asset",
+          "createdAt": "2025-08-19T15:55:59.227Z",
+          "updatedAt": "2025-08-19T15:55:59.227Z",
+          "environment": {
+            "sys": {
+              "id": "master",
+              "type": "Link",
+              "linkType": "Environment"
+            }
+          },
+          "publishedVersion": 3,
+          "revision": 1,
+          "locale": "en-US"
+        },
+        "fields": {
+          "title": "23 square",
+          "file": {
+            "url": "//images.ctfassets.net/h9dp0t9qreql/6LB0AFZngBNOW9LH6tfhQ7/083d5d9604f39fb34f41d24cc4ac055e/23_square.jpg",
+            "details": {
+              "size": 96771,
+              "image": {
+                "width": 807,
+                "height": 807
+              }
+            },
+            "fileName": "23_square.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      },
+      "images": [
+        {
+          "metadata": {
+            "tags": [],
+            "concepts": []
+          },
+          "sys": {
+            "space": {
+              "sys": {
+                "type": "Link",
+                "linkType": "Space",
+                "id": "h9dp0t9qreql"
+              }
+            },
+            "id": "7Mm9kZhSOyFpPWXQB6NWiw",
+            "type": "Asset",
+            "createdAt": "2025-07-14T08:19:31.420Z",
+            "updatedAt": "2025-07-14T08:19:31.420Z",
+            "environment": {
+              "sys": {
+                "id": "master",
+                "type": "Link",
+                "linkType": "Environment"
+              }
+            },
+            "publishedVersion": 2,
+            "revision": 1,
+            "locale": "en-US"
+          },
+          "fields": {
+            "title": "22",
+            "file": {
+              "url": "//images.ctfassets.net/h9dp0t9qreql/7Mm9kZhSOyFpPWXQB6NWiw/9971f2361b6e12c3662e53abd9400bfa/22.jpg",
+              "details": {
+                "size": 141721,
+                "image": {
+                  "width": 754,
+                  "height": 1006
+                }
+              },
+              "fileName": "22.jpg",
+              "contentType": "image/jpeg"
+            }
+          }
+        },
+        {
+          "metadata": {
+            "tags": [],
+            "concepts": []
+          },
+          "sys": {
+            "space": {
+              "sys": {
+                "type": "Link",
+                "linkType": "Space",
+                "id": "h9dp0t9qreql"
+              }
+            },
+            "id": "10AZT2b8jKiuGsDAQ8gi96",
+            "type": "Asset",
+            "createdAt": "2025-07-14T08:19:31.422Z",
+            "updatedAt": "2025-07-14T08:19:31.422Z",
+            "environment": {
+              "sys": {
+                "id": "master",
+                "type": "Link",
+                "linkType": "Environment"
+              }
+            },
+            "publishedVersion": 2,
+            "revision": 1,
+            "locale": "en-US"
+          },
+          "fields": {
+            "title": "23",
+            "file": {
+              "url": "//images.ctfassets.net/h9dp0t9qreql/10AZT2b8jKiuGsDAQ8gi96/a88d608cf7e6c3e825874f40ef4284d4/23.jpg",
+              "details": {
+                "size": 67831,
+                "image": {
+                  "width": 813,
+                  "height": 1084
+                }
+              },
+              "fileName": "23.jpg",
+              "contentType": "image/jpeg"
+            }
+          }
+        },
+        {
+          "metadata": {
+            "tags": [],
+            "concepts": []
+          },
+          "sys": {
+            "space": {
+              "sys": {
+                "type": "Link",
+                "linkType": "Space",
+                "id": "h9dp0t9qreql"
+              }
+            },
+            "id": "7EcFlxmAS5BPwNY2WBYTA3",
+            "type": "Asset",
+            "createdAt": "2025-07-14T08:19:31.411Z",
+            "updatedAt": "2025-07-14T08:19:31.411Z",
+            "environment": {
+              "sys": {
+                "id": "master",
+                "type": "Link",
+                "linkType": "Environment"
+              }
+            },
+            "publishedVersion": 2,
+            "revision": 1,
+            "locale": "en-US"
+          },
+          "fields": {
+            "title": "24",
+            "file": {
+              "url": "//images.ctfassets.net/h9dp0t9qreql/7EcFlxmAS5BPwNY2WBYTA3/fb31a25f19277a4d1a195f610524a507/24.jpg",
+              "details": {
+                "size": 1245505,
+                "image": {
+                  "width": 1897,
+                  "height": 2529
+                }
+              },
+              "fileName": "24.jpg",
+              "contentType": "image/jpeg"
+            }
+          }
+        },
+        {
+          "metadata": {
+            "tags": [],
+            "concepts": []
+          },
+          "sys": {
+            "space": {
+              "sys": {
+                "type": "Link",
+                "linkType": "Space",
+                "id": "h9dp0t9qreql"
+              }
+            },
+            "id": "1hvEPH1Vl0BYm62eAoM0lV",
+            "type": "Asset",
+            "createdAt": "2025-07-14T08:19:31.415Z",
+            "updatedAt": "2025-07-14T08:19:31.415Z",
+            "environment": {
+              "sys": {
+                "id": "master",
+                "type": "Link",
+                "linkType": "Environment"
+              }
+            },
+            "publishedVersion": 2,
+            "revision": 1,
+            "locale": "en-US"
+          },
+          "fields": {
+            "title": "25",
+            "file": {
+              "url": "//images.ctfassets.net/h9dp0t9qreql/1hvEPH1Vl0BYm62eAoM0lV/caef45f6b611fb6b121159226eb8a028/25.jpg",
+              "details": {
+                "size": 269882,
+                "image": {
+                  "width": 943,
+                  "height": 1257
+                }
+              },
+              "fileName": "25.jpg",
+              "contentType": "image/jpeg"
+            }
+          }
+        }
+      ],
+      "categories": [
+        {
+          "metadata": {
+            "tags": [],
+            "concepts": []
+          },
+          "sys": {
+            "space": {
+              "sys": {
+                "type": "Link",
+                "linkType": "Space",
+                "id": "h9dp0t9qreql"
+              }
+            },
+            "id": "2PFM6efHsFavX1FQJBFoti",
+            "type": "Entry",
+            "createdAt": "2025-07-14T08:24:08.219Z",
+            "updatedAt": "2025-07-14T08:24:08.219Z",
+            "environment": {
+              "sys": {
+                "id": "master",
+                "type": "Link",
+                "linkType": "Environment"
+              }
+            },
+            "publishedVersion": 3,
+            "revision": 1,
+            "contentType": {
+              "sys": {
+                "type": "Link",
+                "linkType": "ContentType",
+                "id": "category"
+              }
+            },
+            "locale": "en-US"
+          },
+          "fields": {
+            "title": "Vêtement",
+            "image": {
+              "metadata": {
+                "tags": [],
+                "concepts": []
+              },
+              "sys": {
+                "space": {
+                  "sys": {
+                    "type": "Link",
+                    "linkType": "Space",
+                    "id": "h9dp0t9qreql"
+                  }
+                },
+                "id": "70RQZ7fdzyWRJjht3jVdnM",
+                "type": "Asset",
+                "createdAt": "2025-07-14T08:23:38.385Z",
+                "updatedAt": "2025-07-14T08:23:38.385Z",
+                "environment": {
+                  "sys": {
+                    "id": "master",
+                    "type": "Link",
+                    "linkType": "Environment"
+                  }
+                },
+                "publishedVersion": 2,
+                "revision": 1,
+                "locale": "en-US"
+              },
+              "fields": {
+                "title": "icon-vetement",
+                "file": {
+                  "url": "//images.ctfassets.net/h9dp0t9qreql/70RQZ7fdzyWRJjht3jVdnM/c6c849724ff8abe63a7d6c940c6def8b/icon-vetement.png",
+                  "details": {
+                    "size": 13778,
+                    "image": {
+                      "width": 78,
+                      "height": 74
+                    }
+                  },
+                  "fileName": "icon-vetement.png",
+                  "contentType": "image/png"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "descriptionHtml": "<p>Projet de diplôme pour la licence pro, réinterprétation du mythe d’Orphée inspiré du film éponyme de Jean Cocteau en une comédie musicale dans les années 60 </p>"
+    }
+  },
+  {
+    "metadata": {
+      "tags": [],
+      "concepts": []
+    },
+    "sys": {
+      "space": {
+        "sys": {
+          "type": "Link",
+          "linkType": "Space",
+          "id": "h9dp0t9qreql"
+        }
+      },
+      "id": "2tZgcR8j7KYfAJDzn5uCgu",
+      "type": "Entry",
+      "createdAt": "2025-07-14T08:27:54.735Z",
+      "updatedAt": "2025-08-19T16:13:57.524Z",
+      "environment": {
+        "sys": {
+          "id": "master",
+          "type": "Link",
+          "linkType": "Environment"
+        }
+      },
+      "publishedVersion": 12,
+      "revision": 4,
+      "contentType": {
+        "sys": {
+          "type": "Link",
+          "linkType": "ContentType",
+          "id": "project"
+        }
+      },
+      "locale": "en-US"
+    },
+    "fields": {
+      "title": "Diplôme école de couture",
+      "description": {
+        "data": {},
+        "content": [
+          {
+            "data": {},
+            "content": [
+              {
+                "data": {},
+                "marks": [],
+                "value": "Projet de diplôme pour l’école de couture, total look blanc inspiré de la collection prêt-à-porter printemps été 2022 de Elie Saab ",
+                "nodeType": "text"
+              }
+            ],
+            "nodeType": "paragraph"
+          }
+        ],
+        "nodeType": "document"
+      },
+      "image_main": {
+        "metadata": {
+          "tags": [],
+          "concepts": []
+        },
+        "sys": {
+          "space": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Space",
+              "id": "h9dp0t9qreql"
+            }
+          },
+          "id": "LQDa5GZ8CiVWlsYpQlB2j",
+          "type": "Asset",
+          "createdAt": "2025-07-15T13:13:31.024Z",
+          "updatedAt": "2025-07-15T13:13:31.024Z",
+          "environment": {
+            "sys": {
+              "id": "master",
+              "type": "Link",
+              "linkType": "Environment"
+            }
+          },
+          "publishedVersion": 3,
+          "revision": 1,
+          "locale": "en-US"
+        },
+        "fields": {
+          "title": "7 square",
+          "description": "",
+          "file": {
+            "url": "//images.ctfassets.net/h9dp0t9qreql/LQDa5GZ8CiVWlsYpQlB2j/ef0d18632fbc948460cd883f031b4823/7_square.jpg",
+            "details": {
+              "size": 153980,
+              "image": {
+                "width": 720,
+                "height": 720
+              }
+            },
+            "fileName": "7_square.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      },
+      "images": [
+        {
+          "metadata": {
+            "tags": [],
+            "concepts": []
+          },
+          "sys": {
+            "space": {
+              "sys": {
+                "type": "Link",
+                "linkType": "Space",
+                "id": "h9dp0t9qreql"
+              }
+            },
+            "id": "2VJ31rs6vFKEhvxZ3AHcA1",
+            "type": "Asset",
+            "createdAt": "2025-07-14T08:19:41.343Z",
+            "updatedAt": "2025-07-14T08:28:09.277Z",
+            "environment": {
+              "sys": {
+                "id": "master",
+                "type": "Link",
+                "linkType": "Environment"
+              }
+            },
+            "publishedVersion": 5,
+            "revision": 2,
+            "locale": "en-US"
+          },
+          "fields": {
+            "title": "5",
+            "file": {
+              "url": "//images.ctfassets.net/h9dp0t9qreql/2VJ31rs6vFKEhvxZ3AHcA1/5a2260d44befcda374dd54dd5205ebdc/5.jpg",
+              "details": {
+                "size": 72306,
+                "image": {
+                  "width": 721,
+                  "height": 1028
+                }
+              },
+              "fileName": "5.jpg",
+              "contentType": "image/jpeg"
+            }
+          }
+        },
+        {
+          "metadata": {
+            "tags": [],
+            "concepts": []
+          },
+          "sys": {
+            "space": {
+              "sys": {
+                "type": "Link",
+                "linkType": "Space",
+                "id": "h9dp0t9qreql"
+              }
+            },
+            "id": "1oxyiGTHLhDlYwD03wYPxC",
+            "type": "Asset",
+            "createdAt": "2025-07-14T08:19:41.339Z",
+            "updatedAt": "2025-07-14T08:19:41.339Z",
+            "environment": {
+              "sys": {
+                "id": "master",
+                "type": "Link",
+                "linkType": "Environment"
+              }
+            },
+            "publishedVersion": 2,
+            "revision": 1,
+            "locale": "en-US"
+          },
+          "fields": {
+            "title": "6",
+            "file": {
+              "url": "//images.ctfassets.net/h9dp0t9qreql/1oxyiGTHLhDlYwD03wYPxC/b872a331da7291d0becf42bd9cdc8817/6.jpg",
+              "details": {
+                "size": 84439,
+                "image": {
+                  "width": 1241,
+                  "height": 1477
+                }
+              },
+              "fileName": "6.jpg",
+              "contentType": "image/jpeg"
+            }
+          }
+        },
+        {
+          "metadata": {
+            "tags": [],
+            "concepts": []
+          },
+          "sys": {
+            "space": {
+              "sys": {
+                "type": "Link",
+                "linkType": "Space",
+                "id": "h9dp0t9qreql"
+              }
+            },
+            "id": "6FAQ044cmbOjGR5Ib2cIqV",
+            "type": "Asset",
+            "createdAt": "2025-07-14T08:19:41.327Z",
+            "updatedAt": "2025-07-14T08:19:41.327Z",
+            "environment": {
+              "sys": {
+                "id": "master",
+                "type": "Link",
+                "linkType": "Environment"
+              }
+            },
+            "publishedVersion": 2,
+            "revision": 1,
+            "locale": "en-US"
+          },
+          "fields": {
+            "title": "7",
+            "file": {
+              "url": "//images.ctfassets.net/h9dp0t9qreql/6FAQ044cmbOjGR5Ib2cIqV/91e62ceba4083ec13ce0fd71fc2f10bd/7.jpg",
+              "details": {
+                "size": 134234,
+                "image": {
+                  "width": 721,
+                  "height": 1028
+                }
+              },
+              "fileName": "7.jpg",
+              "contentType": "image/jpeg"
+            }
+          }
+        },
+        {
+          "metadata": {
+            "tags": [],
+            "concepts": []
+          },
+          "sys": {
+            "space": {
+              "sys": {
+                "type": "Link",
+                "linkType": "Space",
+                "id": "h9dp0t9qreql"
+              }
+            },
+            "id": "aTCtwIrsw1AyEAoslgRul",
+            "type": "Asset",
+            "createdAt": "2025-07-14T08:19:41.330Z",
+            "updatedAt": "2025-07-14T08:19:41.330Z",
+            "environment": {
+              "sys": {
+                "id": "master",
+                "type": "Link",
+                "linkType": "Environment"
+              }
+            },
+            "publishedVersion": 2,
+            "revision": 1,
+            "locale": "en-US"
+          },
+          "fields": {
+            "title": "9",
+            "file": {
+              "url": "//images.ctfassets.net/h9dp0t9qreql/aTCtwIrsw1AyEAoslgRul/764053f78cb6466df4101959e477f46c/9.jpg",
+              "details": {
+                "size": 319394,
+                "image": {
+                  "width": 1241,
+                  "height": 1477
+                }
+              },
+              "fileName": "9.jpg",
+              "contentType": "image/jpeg"
+            }
+          }
+        },
+        {
+          "metadata": {
+            "tags": [],
+            "concepts": []
+          },
+          "sys": {
+            "space": {
+              "sys": {
+                "type": "Link",
+                "linkType": "Space",
+                "id": "h9dp0t9qreql"
+              }
+            },
+            "id": "6f6noFcetckNj68RMTDBr4",
+            "type": "Asset",
+            "createdAt": "2025-07-14T08:19:31.490Z",
+            "updatedAt": "2025-07-14T08:19:31.490Z",
+            "environment": {
+              "sys": {
+                "id": "master",
+                "type": "Link",
+                "linkType": "Environment"
+              }
+            },
+            "publishedVersion": 2,
+            "revision": 1,
+            "locale": "en-US"
+          },
+          "fields": {
+            "title": "8",
+            "file": {
+              "url": "//images.ctfassets.net/h9dp0t9qreql/6f6noFcetckNj68RMTDBr4/ccee2a2366ab0102e595b67b141b1d6c/8.jpg",
+              "details": {
+                "size": 200814,
+                "image": {
+                  "width": 1241,
+                  "height": 1477
+                }
+              },
+              "fileName": "8.jpg",
+              "contentType": "image/jpeg"
+            }
+          }
+        },
+        {
+          "metadata": {
+            "tags": [],
+            "concepts": []
+          },
+          "sys": {
+            "space": {
+              "sys": {
+                "type": "Link",
+                "linkType": "Space",
+                "id": "h9dp0t9qreql"
+              }
+            },
+            "id": "15KCEhK7SKm2Ngow4kFvqL",
+            "type": "Asset",
+            "createdAt": "2025-07-14T08:19:41.332Z",
+            "updatedAt": "2025-07-14T08:19:41.332Z",
+            "environment": {
+              "sys": {
+                "id": "master",
+                "type": "Link",
+                "linkType": "Environment"
+              }
+            },
+            "publishedVersion": 2,
+            "revision": 1,
+            "locale": "en-US"
+          },
+          "fields": {
+            "title": "10",
+            "file": {
+              "url": "//images.ctfassets.net/h9dp0t9qreql/15KCEhK7SKm2Ngow4kFvqL/6c5e4c223a0bd51edbf1c687e9e00dd4/10.jpg",
+              "details": {
+                "size": 102418,
+                "image": {
+                  "width": 721,
+                  "height": 1028
+                }
+              },
+              "fileName": "10.jpg",
+              "contentType": "image/jpeg"
+            }
+          }
+        }
+      ],
+      "categories": [
+        {
+          "metadata": {
+            "tags": [],
+            "concepts": []
+          },
+          "sys": {
+            "space": {
+              "sys": {
+                "type": "Link",
+                "linkType": "Space",
+                "id": "h9dp0t9qreql"
+              }
+            },
+            "id": "2PFM6efHsFavX1FQJBFoti",
+            "type": "Entry",
+            "createdAt": "2025-07-14T08:24:08.219Z",
+            "updatedAt": "2025-07-14T08:24:08.219Z",
+            "environment": {
+              "sys": {
+                "id": "master",
+                "type": "Link",
+                "linkType": "Environment"
+              }
+            },
+            "publishedVersion": 3,
+            "revision": 1,
+            "contentType": {
+              "sys": {
+                "type": "Link",
+                "linkType": "ContentType",
+                "id": "category"
+              }
+            },
+            "locale": "en-US"
+          },
+          "fields": {
+            "title": "Vêtement",
+            "image": {
+              "metadata": {
+                "tags": [],
+                "concepts": []
+              },
+              "sys": {
+                "space": {
+                  "sys": {
+                    "type": "Link",
+                    "linkType": "Space",
+                    "id": "h9dp0t9qreql"
+                  }
+                },
+                "id": "70RQZ7fdzyWRJjht3jVdnM",
+                "type": "Asset",
+                "createdAt": "2025-07-14T08:23:38.385Z",
+                "updatedAt": "2025-07-14T08:23:38.385Z",
+                "environment": {
+                  "sys": {
+                    "id": "master",
+                    "type": "Link",
+                    "linkType": "Environment"
+                  }
+                },
+                "publishedVersion": 2,
+                "revision": 1,
+                "locale": "en-US"
+              },
+              "fields": {
+                "title": "icon-vetement",
+                "file": {
+                  "url": "//images.ctfassets.net/h9dp0t9qreql/70RQZ7fdzyWRJjht3jVdnM/c6c849724ff8abe63a7d6c940c6def8b/icon-vetement.png",
+                  "details": {
+                    "size": 13778,
+                    "image": {
+                      "width": 78,
+                      "height": 74
+                    }
+                  },
+                  "fileName": "icon-vetement.png",
+                  "contentType": "image/png"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "descriptionHtml": "<p>Projet de diplôme pour l’école de couture, total look blanc inspiré de la collection prêt-à-porter printemps été 2022 de Elie Saab </p>"
+    }
+  },
+  {
+    "metadata": {
+      "tags": [],
+      "concepts": []
+    },
+    "sys": {
+      "space": {
+        "sys": {
+          "type": "Link",
+          "linkType": "Space",
+          "id": "h9dp0t9qreql"
+        }
+      },
+      "id": "4pLDXWoJl9YUlOXeB0GX5B",
+      "type": "Entry",
+      "createdAt": "2025-08-19T15:57:38.345Z",
+      "updatedAt": "2025-08-19T15:57:38.345Z",
+      "environment": {
+        "sys": {
+          "id": "master",
+          "type": "Link",
+          "linkType": "Environment"
+        }
+      },
+      "publishedVersion": 4,
+      "revision": 1,
+      "contentType": {
+        "sys": {
+          "type": "Link",
+          "linkType": "ContentType",
+          "id": "project"
+        }
+      },
+      "locale": "en-US"
+    },
+    "fields": {
+      "title": "Patine",
+      "description": {
+        "data": {},
+        "content": [
+          {
+            "data": {},
+            "content": [
+              {
+                "data": {},
+                "marks": [],
+                "value": "Exemples de patine réalisée pour des zombies de la série ",
+                "nodeType": "text"
+              },
+              {
+                "data": {},
+                "marks": [
+                  {
+                    "type": "italic"
+                  }
+                ],
+                "value": "Daryl Dickson ",
+                "nodeType": "text"
+              }
+            ],
+            "nodeType": "paragraph"
+          }
+        ],
+        "nodeType": "document"
+      },
+      "image_main": {
+        "metadata": {
+          "tags": [],
+          "concepts": []
+        },
+        "sys": {
+          "space": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Space",
+              "id": "h9dp0t9qreql"
+            }
+          },
+          "id": "7mXRX3d6h0Bpdp4ApAHC8S",
+          "type": "Asset",
+          "createdAt": "2025-07-14T08:19:31.407Z",
+          "updatedAt": "2025-07-14T08:19:31.407Z",
+          "environment": {
+            "sys": {
+              "id": "master",
+              "type": "Link",
+              "linkType": "Environment"
+            }
+          },
+          "publishedVersion": 2,
+          "revision": 1,
+          "locale": "en-US"
+        },
+        "fields": {
+          "title": "27",
+          "file": {
+            "url": "//images.ctfassets.net/h9dp0t9qreql/7mXRX3d6h0Bpdp4ApAHC8S/68a0d1e05db7605652ad73a86c03dfde/27.jpg",
+            "details": {
+              "size": 278308,
+              "image": {
+                "width": 1006,
+                "height": 1006
+              }
+            },
+            "fileName": "27.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      },
+      "images": [
+        {
+          "metadata": {
+            "tags": [],
+            "concepts": []
+          },
+          "sys": {
+            "space": {
+              "sys": {
+                "type": "Link",
+                "linkType": "Space",
+                "id": "h9dp0t9qreql"
+              }
+            },
+            "id": "3rN8r5U27LC5a9xkpM5FTW",
+            "type": "Asset",
+            "createdAt": "2025-07-14T08:19:31.413Z",
+            "updatedAt": "2025-07-14T08:19:31.413Z",
+            "environment": {
+              "sys": {
+                "id": "master",
+                "type": "Link",
+                "linkType": "Environment"
+              }
+            },
+            "publishedVersion": 2,
+            "revision": 1,
+            "locale": "en-US"
+          },
+          "fields": {
+            "title": "26",
+            "file": {
+              "url": "//images.ctfassets.net/h9dp0t9qreql/3rN8r5U27LC5a9xkpM5FTW/fb5bd0ac0d94a7fd2e3bf925fc22b804/26.jpg",
+              "details": {
+                "size": 259939,
+                "image": {
+                  "width": 823,
+                  "height": 823
+                }
+              },
+              "fileName": "26.jpg",
+              "contentType": "image/jpeg"
+            }
+          }
+        },
+        {
+          "metadata": {
+            "tags": [],
+            "concepts": []
+          },
+          "sys": {
+            "space": {
+              "sys": {
+                "type": "Link",
+                "linkType": "Space",
+                "id": "h9dp0t9qreql"
+              }
+            },
+            "id": "14PXuLc8JJse3wTSCL6DSb",
+            "type": "Asset",
+            "createdAt": "2025-07-14T08:19:31.408Z",
+            "updatedAt": "2025-07-14T08:19:31.408Z",
+            "environment": {
+              "sys": {
+                "id": "master",
+                "type": "Link",
+                "linkType": "Environment"
+              }
+            },
+            "publishedVersion": 2,
+            "revision": 1,
+            "locale": "en-US"
+          },
+          "fields": {
+            "title": "29",
+            "file": {
+              "url": "//images.ctfassets.net/h9dp0t9qreql/14PXuLc8JJse3wTSCL6DSb/38e04cdcac88196251fd282c0cc5203d/29.jpg",
+              "details": {
+                "size": 648583,
+                "image": {
+                  "width": 1734,
+                  "height": 1734
+                }
+              },
+              "fileName": "29.jpg",
+              "contentType": "image/jpeg"
+            }
+          }
+        },
+        {
+          "metadata": {
+            "tags": [],
+            "concepts": []
+          },
+          "sys": {
+            "space": {
+              "sys": {
+                "type": "Link",
+                "linkType": "Space",
+                "id": "h9dp0t9qreql"
+              }
+            },
+            "id": "7mXRX3d6h0Bpdp4ApAHC8S",
+            "type": "Asset",
+            "createdAt": "2025-07-14T08:19:31.407Z",
+            "updatedAt": "2025-07-14T08:19:31.407Z",
+            "environment": {
+              "sys": {
+                "id": "master",
+                "type": "Link",
+                "linkType": "Environment"
+              }
+            },
+            "publishedVersion": 2,
+            "revision": 1,
+            "locale": "en-US"
+          },
+          "fields": {
+            "title": "27",
+            "file": {
+              "url": "//images.ctfassets.net/h9dp0t9qreql/7mXRX3d6h0Bpdp4ApAHC8S/68a0d1e05db7605652ad73a86c03dfde/27.jpg",
+              "details": {
+                "size": 278308,
+                "image": {
+                  "width": 1006,
+                  "height": 1006
+                }
+              },
+              "fileName": "27.jpg",
+              "contentType": "image/jpeg"
+            }
+          }
+        },
+        {
+          "metadata": {
+            "tags": [],
+            "concepts": []
+          },
+          "sys": {
+            "space": {
+              "sys": {
+                "type": "Link",
+                "linkType": "Space",
+                "id": "h9dp0t9qreql"
+              }
+            },
+            "id": "7EFaHoenN9q8RgeOehIyXt",
+            "type": "Asset",
+            "createdAt": "2025-07-14T08:19:31.403Z",
+            "updatedAt": "2025-07-14T08:19:31.403Z",
+            "environment": {
+              "sys": {
+                "id": "master",
+                "type": "Link",
+                "linkType": "Environment"
+              }
+            },
+            "publishedVersion": 2,
+            "revision": 1,
+            "locale": "en-US"
+          },
+          "fields": {
+            "title": "28",
+            "file": {
+              "url": "//images.ctfassets.net/h9dp0t9qreql/7EFaHoenN9q8RgeOehIyXt/15f754aab66468c611d1db4543c20e12/28.jpg",
+              "details": {
+                "size": 565559,
+                "image": {
+                  "width": 1734,
+                  "height": 1734
+                }
+              },
+              "fileName": "28.jpg",
+              "contentType": "image/jpeg"
+            }
+          }
+        },
+        {
+          "metadata": {
+            "tags": [],
+            "concepts": []
+          },
+          "sys": {
+            "space": {
+              "sys": {
+                "type": "Link",
+                "linkType": "Space",
+                "id": "h9dp0t9qreql"
+              }
+            },
+            "id": "40ddB5FKIrnYVkl4a3GiLZ",
+            "type": "Asset",
+            "createdAt": "2025-07-14T08:19:31.401Z",
+            "updatedAt": "2025-07-14T08:19:31.401Z",
+            "environment": {
+              "sys": {
+                "id": "master",
+                "type": "Link",
+                "linkType": "Environment"
+              }
+            },
+            "publishedVersion": 2,
+            "revision": 1,
+            "locale": "en-US"
+          },
+          "fields": {
+            "title": "30",
+            "file": {
+              "url": "//images.ctfassets.net/h9dp0t9qreql/40ddB5FKIrnYVkl4a3GiLZ/90f6c267670b404dee37f3c1db6aa6ed/30.jpg",
+              "details": {
+                "size": 454887,
+                "image": {
+                  "width": 1536,
+                  "height": 2048
+                }
+              },
+              "fileName": "30.jpg",
+              "contentType": "image/jpeg"
+            }
+          }
+        }
+      ],
+      "categories": [
+        {
+          "metadata": {
+            "tags": [],
+            "concepts": []
+          },
+          "sys": {
+            "space": {
+              "sys": {
+                "type": "Link",
+                "linkType": "Space",
+                "id": "h9dp0t9qreql"
+              }
+            },
+            "id": "2lp8MUUROPjz7D4I1YV22A",
+            "type": "Entry",
+            "createdAt": "2025-07-14T08:24:47.030Z",
+            "updatedAt": "2025-07-14T08:24:47.030Z",
+            "environment": {
+              "sys": {
+                "id": "master",
+                "type": "Link",
+                "linkType": "Environment"
+              }
+            },
+            "publishedVersion": 2,
+            "revision": 1,
+            "contentType": {
+              "sys": {
+                "type": "Link",
+                "linkType": "ContentType",
+                "id": "category"
+              }
+            },
+            "locale": "en-US"
+          },
+          "fields": {
+            "title": "Cinéma",
+            "image": {
+              "metadata": {
+                "tags": [],
+                "concepts": []
+              },
+              "sys": {
+                "space": {
+                  "sys": {
+                    "type": "Link",
+                    "linkType": "Space",
+                    "id": "h9dp0t9qreql"
+                  }
+                },
+                "id": "17RlcbuPmxJHybqmAnUJjY",
+                "type": "Asset",
+                "createdAt": "2025-07-14T08:23:38.382Z",
+                "updatedAt": "2025-07-14T08:23:38.382Z",
+                "environment": {
+                  "sys": {
+                    "id": "master",
+                    "type": "Link",
+                    "linkType": "Environment"
+                  }
+                },
+                "publishedVersion": 2,
+                "revision": 1,
+                "locale": "en-US"
+              },
+              "fields": {
+                "title": "icon-popcorn",
+                "file": {
+                  "url": "//images.ctfassets.net/h9dp0t9qreql/17RlcbuPmxJHybqmAnUJjY/7796e37ab50025d6b2a2b4deee8cdf7e/icon-popcorn.png",
+                  "details": {
+                    "size": 12148,
+                    "image": {
+                      "width": 66,
+                      "height": 72
+                    }
+                  },
+                  "fileName": "icon-popcorn.png",
+                  "contentType": "image/png"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "descriptionHtml": "<p>Exemples de patine réalisée pour des zombies de la série <i>Daryl Dickson </i></p>"
+    }
+  },
+  {
+    "metadata": {
+      "tags": [],
+      "concepts": []
+    },
+    "sys": {
+      "space": {
+        "sys": {
+          "type": "Link",
+          "linkType": "Space",
+          "id": "h9dp0t9qreql"
+        }
+      },
+      "id": "6Jfg39eNH6IdQbRZ772pKe",
+      "type": "Entry",
+      "createdAt": "2025-08-19T15:53:55.985Z",
+      "updatedAt": "2025-08-19T15:53:55.985Z",
+      "environment": {
+        "sys": {
+          "id": "master",
+          "type": "Link",
+          "linkType": "Environment"
+        }
+      },
+      "publishedVersion": 5,
+      "revision": 1,
+      "contentType": {
+        "sys": {
+          "type": "Link",
+          "linkType": "ContentType",
+          "id": "project"
+        }
+      },
+      "locale": "en-US"
+    },
+    "fields": {
+      "title": "Corsetterie",
+      "description": {
+        "data": {},
+        "content": [
+          {
+            "data": {},
+            "content": [
+              {
+                "data": {},
+                "marks": [],
+                "value": "Divers corsets réalisés à la suite de mon stage en corsetterie chez Silly Garterz ",
+                "nodeType": "text"
+              }
+            ],
+            "nodeType": "paragraph"
+          }
+        ],
+        "nodeType": "document"
+      },
+      "image_main": {
+        "metadata": {
+          "tags": [],
+          "concepts": []
+        },
+        "sys": {
+          "space": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Space",
+              "id": "h9dp0t9qreql"
+            }
+          },
+          "id": "3sNqn4SAZQupEUAYzpXQNY",
+          "type": "Asset",
+          "createdAt": "2025-08-19T15:53:10.736Z",
+          "updatedAt": "2025-08-19T15:53:10.736Z",
+          "environment": {
+            "sys": {
+              "id": "master",
+              "type": "Link",
+              "linkType": "Environment"
+            }
+          },
+          "publishedVersion": 3,
+          "revision": 1,
+          "locale": "en-US"
+        },
+        "fields": {
+          "title": "17 square",
+          "file": {
+            "url": "//images.ctfassets.net/h9dp0t9qreql/3sNqn4SAZQupEUAYzpXQNY/c315c017a8739b741a8a4a848f5d0f32/17_square.jpg",
+            "details": {
+              "size": 471179,
+              "image": {
+                "width": 1445,
+                "height": 1445
+              }
+            },
+            "fileName": "17_square.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      },
+      "images": [
+        {
+          "metadata": {
+            "tags": [],
+            "concepts": []
+          },
+          "sys": {
+            "space": {
+              "sys": {
+                "type": "Link",
+                "linkType": "Space",
+                "id": "h9dp0t9qreql"
+              }
+            },
+            "id": "2h8ZDngrxZTvHEEi5tdVxa",
+            "type": "Asset",
+            "createdAt": "2025-07-14T08:19:31.431Z",
+            "updatedAt": "2025-07-14T08:19:31.431Z",
+            "environment": {
+              "sys": {
+                "id": "master",
+                "type": "Link",
+                "linkType": "Environment"
+              }
+            },
+            "publishedVersion": 2,
+            "revision": 1,
+            "locale": "en-US"
+          },
+          "fields": {
+            "title": "16",
+            "file": {
+              "url": "//images.ctfassets.net/h9dp0t9qreql/2h8ZDngrxZTvHEEi5tdVxa/4ee0c4a861800c4cc085832e127267d1/16.jpg",
+              "details": {
+                "size": 198217,
+                "image": {
+                  "width": 821,
+                  "height": 1094
+                }
+              },
+              "fileName": "16.jpg",
+              "contentType": "image/jpeg"
+            }
+          }
+        },
+        {
+          "metadata": {
+            "tags": [],
+            "concepts": []
+          },
+          "sys": {
+            "space": {
+              "sys": {
+                "type": "Link",
+                "linkType": "Space",
+                "id": "h9dp0t9qreql"
+              }
+            },
+            "id": "5AkRBuFgLQHd8u2ouX393H",
+            "type": "Asset",
+            "createdAt": "2025-07-14T08:19:31.428Z",
+            "updatedAt": "2025-07-14T08:19:31.428Z",
+            "environment": {
+              "sys": {
+                "id": "master",
+                "type": "Link",
+                "linkType": "Environment"
+              }
+            },
+            "publishedVersion": 2,
+            "revision": 1,
+            "locale": "en-US"
+          },
+          "fields": {
+            "title": "17",
+            "file": {
+              "url": "//images.ctfassets.net/h9dp0t9qreql/5AkRBuFgLQHd8u2ouX393H/5f75710c220d6d9b9abc4548187f8de6/17.jpg",
+              "details": {
+                "size": 596810,
+                "image": {
+                  "width": 1922,
+                  "height": 2560
+                }
+              },
+              "fileName": "17.jpg",
+              "contentType": "image/jpeg"
+            }
+          }
+        },
+        {
+          "metadata": {
+            "tags": [],
+            "concepts": []
+          },
+          "sys": {
+            "space": {
+              "sys": {
+                "type": "Link",
+                "linkType": "Space",
+                "id": "h9dp0t9qreql"
+              }
+            },
+            "id": "6cfpQNRnyo9HvDdvWXckXW",
+            "type": "Asset",
+            "createdAt": "2025-07-14T08:19:31.424Z",
+            "updatedAt": "2025-07-14T08:19:31.424Z",
+            "environment": {
+              "sys": {
+                "id": "master",
+                "type": "Link",
+                "linkType": "Environment"
+              }
+            },
+            "publishedVersion": 2,
+            "revision": 1,
+            "locale": "en-US"
+          },
+          "fields": {
+            "title": "19",
+            "file": {
+              "url": "//images.ctfassets.net/h9dp0t9qreql/6cfpQNRnyo9HvDdvWXckXW/1bc661b3a24840536248ceaf5bda337c/19.jpg",
+              "details": {
+                "size": 458749,
+                "image": {
+                  "width": 1536,
+                  "height": 2048
+                }
+              },
+              "fileName": "19.jpg",
+              "contentType": "image/jpeg"
+            }
+          }
+        },
+        {
+          "metadata": {
+            "tags": [],
+            "concepts": []
+          },
+          "sys": {
+            "space": {
+              "sys": {
+                "type": "Link",
+                "linkType": "Space",
+                "id": "h9dp0t9qreql"
+              }
+            },
+            "id": "3zS3KdgACAl8SwP3WZvFaD",
+            "type": "Asset",
+            "createdAt": "2025-07-14T08:19:31.437Z",
+            "updatedAt": "2025-07-14T08:19:31.437Z",
+            "environment": {
+              "sys": {
+                "id": "master",
+                "type": "Link",
+                "linkType": "Environment"
+              }
+            },
+            "publishedVersion": 2,
+            "revision": 1,
+            "locale": "en-US"
+          },
+          "fields": {
+            "title": "18",
+            "file": {
+              "url": "//images.ctfassets.net/h9dp0t9qreql/3zS3KdgACAl8SwP3WZvFaD/a78db01ef43569dca45a6cc1a9628ab3/18.jpg",
+              "details": {
+                "size": 375845,
+                "image": {
+                  "width": 1536,
+                  "height": 2048
+                }
+              },
+              "fileName": "18.jpg",
+              "contentType": "image/jpeg"
+            }
+          }
+        },
+        {
+          "metadata": {
+            "tags": [],
+            "concepts": []
+          },
+          "sys": {
+            "space": {
+              "sys": {
+                "type": "Link",
+                "linkType": "Space",
+                "id": "h9dp0t9qreql"
+              }
+            },
+            "id": "58bSBd6tdWhH5HsUkYdFXB",
+            "type": "Asset",
+            "createdAt": "2025-07-14T08:19:31.418Z",
+            "updatedAt": "2025-07-14T08:19:31.418Z",
+            "environment": {
+              "sys": {
+                "id": "master",
+                "type": "Link",
+                "linkType": "Environment"
+              }
+            },
+            "publishedVersion": 2,
+            "revision": 1,
+            "locale": "en-US"
+          },
+          "fields": {
+            "title": "21",
+            "file": {
+              "url": "//images.ctfassets.net/h9dp0t9qreql/58bSBd6tdWhH5HsUkYdFXB/5ee18b91bdd4ab9e2749467885fdb79d/21.jpg",
+              "details": {
+                "size": 319580,
+                "image": {
+                  "width": 1536,
+                  "height": 2048
+                }
+              },
+              "fileName": "21.jpg",
+              "contentType": "image/jpeg"
+            }
+          }
+        },
+        {
+          "metadata": {
+            "tags": [],
+            "concepts": []
+          },
+          "sys": {
+            "space": {
+              "sys": {
+                "type": "Link",
+                "linkType": "Space",
+                "id": "h9dp0t9qreql"
+              }
+            },
+            "id": "420ZFI5b3V9JS6MPB46n43",
+            "type": "Asset",
+            "createdAt": "2025-07-14T08:19:31.427Z",
+            "updatedAt": "2025-07-14T08:19:31.427Z",
+            "environment": {
+              "sys": {
+                "id": "master",
+                "type": "Link",
+                "linkType": "Environment"
+              }
+            },
+            "publishedVersion": 2,
+            "revision": 1,
+            "locale": "en-US"
+          },
+          "fields": {
+            "title": "20",
+            "file": {
+              "url": "//images.ctfassets.net/h9dp0t9qreql/420ZFI5b3V9JS6MPB46n43/21228b153a22539f54325f297241bc03/20.jpg",
+              "details": {
+                "size": 302579,
+                "image": {
+                  "width": 1536,
+                  "height": 2048
+                }
+              },
+              "fileName": "20.jpg",
+              "contentType": "image/jpeg"
+            }
+          }
+        }
+      ],
+      "categories": [
+        {
+          "metadata": {
+            "tags": [],
+            "concepts": []
+          },
+          "sys": {
+            "space": {
+              "sys": {
+                "type": "Link",
+                "linkType": "Space",
+                "id": "h9dp0t9qreql"
+              }
+            },
+            "id": "2PFM6efHsFavX1FQJBFoti",
+            "type": "Entry",
+            "createdAt": "2025-07-14T08:24:08.219Z",
+            "updatedAt": "2025-07-14T08:24:08.219Z",
+            "environment": {
+              "sys": {
+                "id": "master",
+                "type": "Link",
+                "linkType": "Environment"
+              }
+            },
+            "publishedVersion": 3,
+            "revision": 1,
+            "contentType": {
+              "sys": {
+                "type": "Link",
+                "linkType": "ContentType",
+                "id": "category"
+              }
+            },
+            "locale": "en-US"
+          },
+          "fields": {
+            "title": "Vêtement",
+            "image": {
+              "metadata": {
+                "tags": [],
+                "concepts": []
+              },
+              "sys": {
+                "space": {
+                  "sys": {
+                    "type": "Link",
+                    "linkType": "Space",
+                    "id": "h9dp0t9qreql"
+                  }
+                },
+                "id": "70RQZ7fdzyWRJjht3jVdnM",
+                "type": "Asset",
+                "createdAt": "2025-07-14T08:23:38.385Z",
+                "updatedAt": "2025-07-14T08:23:38.385Z",
+                "environment": {
+                  "sys": {
+                    "id": "master",
+                    "type": "Link",
+                    "linkType": "Environment"
+                  }
+                },
+                "publishedVersion": 2,
+                "revision": 1,
+                "locale": "en-US"
+              },
+              "fields": {
+                "title": "icon-vetement",
+                "file": {
+                  "url": "//images.ctfassets.net/h9dp0t9qreql/70RQZ7fdzyWRJjht3jVdnM/c6c849724ff8abe63a7d6c940c6def8b/icon-vetement.png",
+                  "details": {
+                    "size": 13778,
+                    "image": {
+                      "width": 78,
+                      "height": 74
+                    }
+                  },
+                  "fileName": "icon-vetement.png",
+                  "contentType": "image/png"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "descriptionHtml": "<p>Divers corsets réalisés à la suite de mon stage en corsetterie chez Silly Garterz </p>"
+    }
+  },
+  {
+    "metadata": {
+      "tags": [],
+      "concepts": []
+    },
+    "sys": {
+      "space": {
+        "sys": {
+          "type": "Link",
+          "linkType": "Space",
+          "id": "h9dp0t9qreql"
+        }
+      },
+      "id": "tPFhcvfKRTIKchrCin7Ts",
+      "type": "Entry",
+      "createdAt": "2025-07-14T08:20:15.000Z",
+      "updatedAt": "2025-07-15T13:13:04.849Z",
+      "environment": {
+        "sys": {
+          "id": "master",
+          "type": "Link",
+          "linkType": "Environment"
+        }
+      },
+      "publishedVersion": 12,
+      "revision": 3,
+      "contentType": {
+        "sys": {
+          "type": "Link",
+          "linkType": "ContentType",
+          "id": "project"
+        }
+      },
+      "locale": "en-US"
+    },
+    "fields": {
+      "title": "Concept collection",
+      "description": {
+        "data": {},
+        "content": [
+          {
+            "data": {},
+            "content": [
+              {
+                "data": {},
+                "marks": [],
+                "value": "Intégration d’une tenue dans la collection Automne-Hiver 2021 de Laquan Smith.",
+                "nodeType": "text"
+              }
+            ],
+            "nodeType": "paragraph"
+          }
+        ],
+        "nodeType": "document"
+      },
+      "image_main": {
+        "metadata": {
+          "tags": [],
+          "concepts": []
+        },
+        "sys": {
+          "space": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Space",
+              "id": "h9dp0t9qreql"
+            }
+          },
+          "id": "3C3AaFc3bZVBOujyhImMv8",
+          "type": "Asset",
+          "createdAt": "2025-07-15T13:12:58.939Z",
+          "updatedAt": "2025-07-15T13:12:58.939Z",
+          "environment": {
+            "sys": {
+              "id": "master",
+              "type": "Link",
+              "linkType": "Environment"
+            }
+          },
+          "publishedVersion": 3,
+          "revision": 1,
+          "locale": "en-US"
+        },
+        "fields": {
+          "title": "1 square",
+          "description": "",
+          "file": {
+            "url": "//images.ctfassets.net/h9dp0t9qreql/3C3AaFc3bZVBOujyhImMv8/238804d061636ed102017ad2d6fcc95a/1_square.jpg",
+            "details": {
+              "size": 71020,
+              "image": {
+                "width": 706,
+                "height": 721
+              }
+            },
+            "fileName": "1_square.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      },
+      "images": [
+        {
+          "metadata": {
+            "tags": [],
+            "concepts": []
+          },
+          "sys": {
+            "space": {
+              "sys": {
+                "type": "Link",
+                "linkType": "Space",
+                "id": "h9dp0t9qreql"
+              }
+            },
+            "id": "7tF2wldxgtqUM2KewBwZ4p",
+            "type": "Asset",
+            "createdAt": "2025-07-14T08:19:41.347Z",
+            "updatedAt": "2025-07-14T08:19:41.347Z",
+            "environment": {
+              "sys": {
+                "id": "master",
+                "type": "Link",
+                "linkType": "Environment"
+              }
+            },
+            "publishedVersion": 2,
+            "revision": 1,
+            "locale": "en-US"
+          },
+          "fields": {
+            "title": "1",
+            "file": {
+              "url": "//images.ctfassets.net/h9dp0t9qreql/7tF2wldxgtqUM2KewBwZ4p/d104c28d2b95b0f7224d51c5dea186ce/1.jpg",
+              "details": {
+                "size": 45534,
+                "image": {
+                  "width": 721,
+                  "height": 1028
+                }
+              },
+              "fileName": "1.jpg",
+              "contentType": "image/jpeg"
+            }
+          }
+        },
+        {
+          "metadata": {
+            "tags": [],
+            "concepts": []
+          },
+          "sys": {
+            "space": {
+              "sys": {
+                "type": "Link",
+                "linkType": "Space",
+                "id": "h9dp0t9qreql"
+              }
+            },
+            "id": "4v65VfpsLElOHBGSHimMhk",
+            "type": "Asset",
+            "createdAt": "2025-07-14T08:19:41.345Z",
+            "updatedAt": "2025-07-14T08:19:41.345Z",
+            "environment": {
+              "sys": {
+                "id": "master",
+                "type": "Link",
+                "linkType": "Environment"
+              }
+            },
+            "publishedVersion": 2,
+            "revision": 1,
+            "locale": "en-US"
+          },
+          "fields": {
+            "title": "3",
+            "file": {
+              "url": "//images.ctfassets.net/h9dp0t9qreql/4v65VfpsLElOHBGSHimMhk/ec78e659e9368e30d14cb84b9a3ca289/3.jpg",
+              "details": {
+                "size": 41107,
+                "image": {
+                  "width": 721,
+                  "height": 1028
+                }
+              },
+              "fileName": "3.jpg",
+              "contentType": "image/jpeg"
+            }
+          }
+        },
+        {
+          "metadata": {
+            "tags": [],
+            "concepts": []
+          },
+          "sys": {
+            "space": {
+              "sys": {
+                "type": "Link",
+                "linkType": "Space",
+                "id": "h9dp0t9qreql"
+              }
+            },
+            "id": "3lgbeo12srgcxLE5lnpNEh",
+            "type": "Asset",
+            "createdAt": "2025-07-14T08:19:41.341Z",
+            "updatedAt": "2025-07-14T08:19:41.341Z",
+            "environment": {
+              "sys": {
+                "id": "master",
+                "type": "Link",
+                "linkType": "Environment"
+              }
+            },
+            "publishedVersion": 2,
+            "revision": 1,
+            "locale": "en-US"
+          },
+          "fields": {
+            "title": "4",
+            "file": {
+              "url": "//images.ctfassets.net/h9dp0t9qreql/3lgbeo12srgcxLE5lnpNEh/b71e2ee48e1261f5541aeada566bd408/4.jpg",
+              "details": {
+                "size": 39024,
+                "image": {
+                  "width": 721,
+                  "height": 1028
+                }
+              },
+              "fileName": "4.jpg",
+              "contentType": "image/jpeg"
+            }
+          }
+        },
+        {
+          "metadata": {
+            "tags": [],
+            "concepts": []
+          },
+          "sys": {
+            "space": {
+              "sys": {
+                "type": "Link",
+                "linkType": "Space",
+                "id": "h9dp0t9qreql"
+              }
+            },
+            "id": "6s3EYHw7yGpREcbNkbD0pw",
+            "type": "Asset",
+            "createdAt": "2025-07-14T08:19:41.336Z",
+            "updatedAt": "2025-07-14T08:19:41.336Z",
+            "environment": {
+              "sys": {
+                "id": "master",
+                "type": "Link",
+                "linkType": "Environment"
+              }
+            },
+            "publishedVersion": 2,
+            "revision": 1,
+            "locale": "en-US"
+          },
+          "fields": {
+            "title": "2",
+            "file": {
+              "url": "//images.ctfassets.net/h9dp0t9qreql/6s3EYHw7yGpREcbNkbD0pw/af5ed0ad67080f97ab37693315526b9c/2.jpg",
+              "details": {
+                "size": 37702,
+                "image": {
+                  "width": 721,
+                  "height": 1028
+                }
+              },
+              "fileName": "2.jpg",
+              "contentType": "image/jpeg"
+            }
+          }
+        }
+      ],
+      "categories": [
+        {
+          "metadata": {
+            "tags": [],
+            "concepts": []
+          },
+          "sys": {
+            "space": {
+              "sys": {
+                "type": "Link",
+                "linkType": "Space",
+                "id": "h9dp0t9qreql"
+              }
+            },
+            "id": "2PFM6efHsFavX1FQJBFoti",
+            "type": "Entry",
+            "createdAt": "2025-07-14T08:24:08.219Z",
+            "updatedAt": "2025-07-14T08:24:08.219Z",
+            "environment": {
+              "sys": {
+                "id": "master",
+                "type": "Link",
+                "linkType": "Environment"
+              }
+            },
+            "publishedVersion": 3,
+            "revision": 1,
+            "contentType": {
+              "sys": {
+                "type": "Link",
+                "linkType": "ContentType",
+                "id": "category"
+              }
+            },
+            "locale": "en-US"
+          },
+          "fields": {
+            "title": "Vêtement",
+            "image": {
+              "metadata": {
+                "tags": [],
+                "concepts": []
+              },
+              "sys": {
+                "space": {
+                  "sys": {
+                    "type": "Link",
+                    "linkType": "Space",
+                    "id": "h9dp0t9qreql"
+                  }
+                },
+                "id": "70RQZ7fdzyWRJjht3jVdnM",
+                "type": "Asset",
+                "createdAt": "2025-07-14T08:23:38.385Z",
+                "updatedAt": "2025-07-14T08:23:38.385Z",
+                "environment": {
+                  "sys": {
+                    "id": "master",
+                    "type": "Link",
+                    "linkType": "Environment"
+                  }
+                },
+                "publishedVersion": 2,
+                "revision": 1,
+                "locale": "en-US"
+              },
+              "fields": {
+                "title": "icon-vetement",
+                "file": {
+                  "url": "//images.ctfassets.net/h9dp0t9qreql/70RQZ7fdzyWRJjht3jVdnM/c6c849724ff8abe63a7d6c940c6def8b/icon-vetement.png",
+                  "details": {
+                    "size": 13778,
+                    "image": {
+                      "width": 78,
+                      "height": 74
+                    }
+                  },
+                  "fileName": "icon-vetement.png",
+                  "contentType": "image/png"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "descriptionHtml": "<p>Intégration d’une tenue dans la collection Automne-Hiver 2021 de Laquan Smith.</p>"
+    }
+  }
+]);
+        #
+    }
 </script>
 
         </div>
