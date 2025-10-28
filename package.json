@@ -19,6 +19,7 @@
     "@fancyapps/ui": "^6.0.14",
     "contentful": "^11.5.22",
     "dotenv": "^17.2.0",
+    "imagesloaded": "^5.0.0",
     "isotope-layout": "^3.0.6"
   },
   "devDependencies": {

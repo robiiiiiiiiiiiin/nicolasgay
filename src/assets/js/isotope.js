@@ -1,4 +1,6 @@
 import Isotope from 'isotope-layout';
+import imagesLoaded from 'imagesloaded';
+
 
 document.addEventListener('DOMContentLoaded', function () {
     const elem = document.querySelector('.isotope-grid');
@@ -14,6 +16,10 @@ document.addEventListener('DOMContentLoaded', function () {
                 gutter: '.gutter-sizer'
             },
         });
+        imagesLoaded(elem).on('progress', function () {
+            // Refresh layout after each image loads to prevent a height bug
+            iso.layout();
+        })
     }
 
     filters.forEach(filter => {
