@@ -5,7 +5,7 @@
                 <img src="/public/img/k7.jpg" alt="" class="h-full">
                 <div class="mx-1 whitespace-nowrap overflow-hidden max-w-[calc(100vw_-_180px)]">
                     {% for music in musics %}
-                        <div class="audio-title hidden text-s text-white text-ellipsis">{{ music.fields.title }}</div>
+                        <div class="audio-title hidden text-s text-white overflow-hidden text-ellipsis">{{ music.fields.title }}</div>
                         <audio class="hidden" src="https:{{ music.fields.file.url }}"></audio>
                     {% endfor %}
                 </div>
