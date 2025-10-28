@@ -26,7 +26,12 @@ export default function (eleventyConfig) {
     // Order matters, put this at the top of your configuration file.
     eleventyConfig.setInputDirectory("src");
     eleventyConfig.addPassthroughCopy("src/public");
-    // JavaScript will be bundled by esbuild, so we don't need to copy individual files
+    
+    // Watch CSS and JS files for changes
+    eleventyConfig.addWatchTarget("./src/assets/style/");
+    eleventyConfig.addWatchTarget("./src/assets/js/");
+    
+    // JavaScript will be bundled by esbuild in eleventy.before, so we don't need to copy individual files
     // eleventyConfig.addPassthroughCopy({ "src/assets/js": "js" });
     /* eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
         // output image formats
