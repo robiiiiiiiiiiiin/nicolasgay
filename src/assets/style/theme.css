@@ -1,5 +1,8 @@
 /********************* COLORS */
 @theme {
+    /* breakpoints */
+    --breakpoint-max-w-reached: 1040px;
+
     --color-*: initial;
     --color-primary: #e17fa2;
     --color-primary-dark: #b11c57;
@@ -12,4 +15,6 @@
 
     --font-title: 'Brimstone', serif;
     --font-body: 'Times New Roman', serif;
+
+    --z-index-music-player: 50;
 }

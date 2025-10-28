@@ -2,6 +2,7 @@
 layout: layout.njk
 title: Homepage
 ---
+{% from "src/components/musicPlayer.njk" import musicPlayer %}
 
 <h1 class="relative font-title bg-[linear-gradient(#b11c57,_#e17fa2)] bg-clip-text text-5xl text-center leading-[1.5] drop-shadow-secondary drop-shadow-[2px_2px_1px] max-w-[260px] mx-auto" style="-webkit-text-fill-color: transparent;">
     <span>{{ general.title }}</span>
@@ -13,7 +14,11 @@ title: Homepage
     <img src="https:{{ general.nicosImage.fields.file.url }}" alt="Nicolas Gay" class="w-full border-3 border-secondary drop-shadow-primary drop-shadow-[0_0_40px] mt-6">
 </div>
 
-<p class="text-white mt-10 text-[18px] max-w-[420px] mx-auto">{{ general.description }}</p>
+<p class="text-white my-10 text-[18px] max-w-[420px] mx-auto">{{ general.description }}</p>
+
+<div id="musicPlayer" class="sticky top-0 -ml-3 w-[calc(100%_+_1.5rem)] mt-10 z-music-player">
+    {{ musicPlayer(musics) }}
+</div>
 
 <h2 class="mt-10 mb-6">{{ general.projectsTitle }}</h2>
 <ul class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3">
@@ -51,5 +56,8 @@ title: Homepage
 </div>
 
 <script type="text/javascript">
-    {# console.log({{ projects | dump(2) | safe }}); #}
+    {
+        # console.log({{ projects | dump(2) | safe }});
+        #
+    }
 </script>

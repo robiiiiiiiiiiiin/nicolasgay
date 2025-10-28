@@ -8,6 +8,11 @@ layout: layout.njk
 eleventyComputed:
     title: "{{ project.fields.title }}"
 ---
+{% from "src/components/musicPlayer.njk" import musicPlayer %}
+
+{# <div id="musicPlayer" class="fixed top-0 -ml-3 w-full z-music-player">
+    {{ musicPlayer(musics) }}
+</div> #}
 
 <a href="/" class="relative block font-title bg-[linear-gradient(#b11c57,_#e17fa2)] bg-clip-text text-5xl text-center leading-[1.5] drop-shadow-secondary drop-shadow-[2px_2px_1px] max-w-[260px] mx-auto" style="-webkit-text-fill-color: transparent;">
     <span>{{ general.title }}</span>
